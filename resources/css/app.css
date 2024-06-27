@@ -1,3 +1,498 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.bg{
+    /* background: linear-gradient(45deg, #2c3e50 25%,#2980b9 75%) */
+
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+
+.curve {
+    border-radius: 58px 0px 10px 58px;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+
+    -webkit-clip-path:
+    polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path:
+    polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+}
+.curve2{
+
+    /* border-radius: 58px 0px 10px 58px; */
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    -webkit-clip-path:
+    polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path:
+    polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+
+    font-size: 0.95em;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+
+
+
+
+
+.full-screen {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-just-black);
+}
+
+#masthead {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9999;
+}
+#masthead a {
+  padding: 1rem 2rem;
+}
+
+
+#panels #panels-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #ddd; */
+}
+#panels #panels-container .panel {
+  color: var(--color-just-black);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 1px solid #f00; */
+}
+/* #panels #panels-container .panel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+#panels #panels-container .panel .panels-navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+#panels #panels-container .panel .anchor-panel,
+#panels #panels-container .panel .nav-panel {
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+#panels #panels-container .panels-navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+a {
+  color: var(--color-just-black)
+}
+
+.before-enter {
+    opacity: 0;
+    /* Assurez-vous que la transition s'applique à l'opacité */
+    transition: all 2s ease-out;
+  }
+
+  .enter {
+    opacity: 1;
+  }
+
+/* Zooming Entrances */
+.zoomIn {
+    animation: zoomIn 3s;
+  }
+
+  .zoomInDown {
+    animation: zoomInDown 3s;
+  }
+
+  .zoomInLeft {
+    animation: zoomInLeft 3s;
+  }
+
+  .zoomInRight {
+    animation: zoomInRight 3s;
+  }
+
+  .zoomInUp {
+    animation: zoomInUp 3s;
+  }
+
+  /* Définition des keyframes pour chaque animation */
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoomInDown {
+    from {
+      opacity: 0;
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+  }
+
+  @keyframes zoomInLeft {
+    from {
+      opacity: 0;
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+  }
+
+  @keyframes zoomInRight {
+    from {
+      opacity: 0;
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+  }
+
+  @keyframes zoomInUp {
+    from {
+      opacity: 0;
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+  }
+
+
+  /* Animation jackInTheBox */
+.jackInTheBox {
+    animation: jackInTheBox 3s;
+  }
+
+  @keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      transform: scale(0.1) rotate(30deg);
+      transform-origin: center bottom;
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    70% {
+      transform: rotate(3deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  /* Animation rollIn */
+  .rollIn {
+    animation: rollIn 3s;
+  }
+
+  @keyframes rollIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%) rotate(-120deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) rotate(0);
+    }
+  }
+
+
+  /* Rotating Entrances */
+.rotateIn {
+    animation: rotateIn 3s;
+  }
+
+  .rotateInDownLeft {
+    animation: rotateInDownLeft 3s;
+  }
+
+  .rotateInDownRight {
+    animation: rotateInDownRight 3s;
+  }
+
+  .rotateInUpLeft {
+    animation: rotateInUpLeft 3s;
+  }
+
+  .rotateInUpRight {
+    animation: rotateInUpRight 3s;
+  }
+
+  /* Définition des keyframes pour chaque animation */
+
+  @keyframes rotateIn {
+    from {
+      opacity: 0;
+      transform-origin: center;
+      transform: rotate(-200deg);
+    }
+    to {
+      opacity: 1;
+      transform-origin: center;
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes rotateInDownLeft {
+    from {
+      opacity: 0;
+      transform-origin: left bottom;
+      transform: rotate(-45deg);
+    }
+    to {
+      opacity: 1;
+      transform-origin: left bottom;
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes rotateInDownRight {
+    from {
+      opacity: 0;
+      transform-origin: right bottom;
+      transform: rotate(45deg);
+    }
+    to {
+      opacity: 1;
+      transform-origin: right bottom;
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes rotateInUpLeft {
+    from {
+      opacity: 0;
+      transform-origin: left top;
+      transform: rotate(45deg);
+    }
+    to {
+      opacity: 1;
+      transform-origin: left top;
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes rotateInUpRight {
+    from {
+      opacity: 0;
+      transform-origin: right top;
+      transform: rotate(-45deg);
+    }
+    to {
+      opacity: 1;
+      transform-origin: right top;
+      transform: rotate(0);
+    }
+  }
+
+  /* Back Entrances */
+.backInDown {
+    animation: backInDown 3s;
+  }
+
+  .backInLeft {
+    animation: backInLeft 3s;
+  }
+
+  .backInRight {
+    animation: backInRight 3s;
+  }
+
+  .backInUp {
+    animation: backInUp 3s;
+  }
+
+  /* Définition des keyframes pour chaque animation */
+
+  @keyframes backInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-1000px) scale(0.7);
+      animation-timing-function: ease-in-back;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      animation-timing-function: ease-out-back;
+    }
+  }
+
+  @keyframes backInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-2000px) scale(0.7);
+      animation-timing-function: ease-in-back;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      animation-timing-function: ease-out-back;
+    }
+  }
+
+  @keyframes backInRight {
+    from {
+      opacity: 0;
+      transform: translateX(2000px) scale(0.7);
+      animation-timing-function: ease-in-back;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      animation-timing-function: ease-out-back;
+    }
+  }
+
+  @keyframes backInUp {
+    from {
+      opacity: 0;
+      transform: translateY(1000px) scale(0.7);
+      animation-timing-function: ease-in-back;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      animation-timing-function: ease-out-back;
+    }
+  }
+
+  /* Sliding Entrances */
+.slideInDown {
+    animation: slideInDown 3s;
+  }
+
+  .slideInLeft {
+    animation: slideInLeft 3s;
+  }
+
+  .slideInRight {
+    animation: slideInRight 3s;
+  }
+
+  .slideInUp {
+    animation: slideInUp 3s;
+  }
+
+  /* Définition des keyframes pour chaque animation */
+
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+      visibility: visible;
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      visibility: visible;
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      visibility: visible;
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+      visibility: visible;
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
