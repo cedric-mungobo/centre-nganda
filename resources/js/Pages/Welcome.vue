@@ -53,7 +53,7 @@ const services1 = [
 
     <!--  home hero -->
     <section class="w-full h-[100vh] flex bg-secondary">
-      <div class="md:pt-52 md:px-10 pl-3 text-white">
+      <div class="md:pt-52 pt-24 md:px-10 pl-3 text-white">
         <h1 class="text-xl" v-animate="'backInDown'">
           Votre santé, Notre priorité
         </h1>
@@ -158,7 +158,7 @@ const services1 = [
     <!--  cancer -->
 
     <section class="w-full flex h-[100vh] bg-[#ad808c]">
-      <div class="md:pt-52 md:px-10 pl-3 text-white">
+      <div class="md:pt-52 pt-24 md:px-10 px-1 pl-3 text-white">
         <h1 class="text-xl" v-animate="'backInDown'">
           Centre Hospitalier Nganda : l'espoir d'une guérison
         </h1>
@@ -179,7 +179,7 @@ const services1 = [
           <div class="py-6">
             <button
               type="button"
-              class="m-1 h-12 transform rounded-md bg-primary px-6 py-2 text-secondary transition-colors duration-200 focus:bg-secondary focus:outline-none hover:bg-secondary"
+              class="m-1 h-12 transform rounded-md bg-primary px-6 py-2 text-secondary hover:bg-slate-200 transition-colors duration-200 focus:outline-none"
             >
               Contactez-nous
             </button>
