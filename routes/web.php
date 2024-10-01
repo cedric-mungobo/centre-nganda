@@ -14,6 +14,16 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
+Route::get('/services', function () {
+    return Inertia::render('Services');
+})->name('services');
+
+
+Route::get('/radiotherapie', function () {
+    return Inertia::render('Radiotherapie');
+})->name('radiotherapie');
+
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
