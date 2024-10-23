@@ -6,37 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title inertia>{{ config('app.name', 'Centre Nganda') }}</title>
-    <meta
-    name="description"
-    content="Le Centre Nganda est un établissement médical spécialisé dans les soins contre le cancer, la radiothérapie, la pédiatrie, la médecine interne et bien d'autres services à Kinshasa."
-/>
-<meta
-    name="keywords"
-    content="Centre Nganda, Kinshasa, radiothérapie, oncologie, soins médicaux, traitement du cancer, pédiatrie, chirurgie, médecine interne"
-/>
-<meta name="author" content="Centre Nganda" />
+    <meta name="description" content="Le Centre Nganda est un établissement médical spécialisé dans les soins contre le cancer, la radiothérapie, la pédiatrie, la médecine interne et bien d'autres services à Kinshasa." />
+    <meta name="keywords" content="Centre Nganda, Kinshasa, radiothérapie, oncologie, soins médicaux, traitement du cancer, pédiatrie, chirurgie, médecine interne" />
+    <meta name="author" content="Centre Nganda" />
 
-<!-- favicon -->
-<link rel="icon" type="image/png" href="{{ asset('assets/images/logo.png') }}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/logo.png') }}" />
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Centre Nganda - Spécialistes en Radiothérapie et Soins Médicaux à Kinshasa" />
+    <meta property="og:description" content="Découvrez les services de santé spécialisés du Centre Nganda, notamment la radiothérapie, oncologie, pédiatrie, chirurgie et plus encore à Kinshasa." />
+    <meta property="og:image" content="{{ asset('assets/images/logo.png') }}" />
+    <meta property="og:url" content="{{ route('home') }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Centre Nganda" />
 
-<!-- Open Graph Meta Tags -->
-<meta
-    property="og:title"
-    content="Centre Nganda - Spécialistes en Radiothérapie et Soins Médicaux à Kinshasa"
-/>
-<meta
-    property="og:description"
-    content="Découvrez les services de santé spécialisés du Centre Nganda, notamment la radiothérapie, oncologie, pédiatrie, chirurgie et plus encore à Kinshasa."
-/>
-<meta property="og:image" content="{{ asset('assets/images/logo.png') }}" />
-<meta property="og:url" content="{{ route('home') }}" />
-<meta property="og:type" content="website" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Centre Nganda - Spécialistes en Radiothérapie et Soins Médicaux à Kinshasa" />
+    <meta name="twitter:description" content="Découvrez les services de santé spécialisés du Centre Nganda, notamment la radiothérapie, oncologie, pédiatrie, chirurgie et plus encore à Kinshasa." />
+    <meta name="twitter:image" content="{{ asset('assets/images/logo.png') }}" />
 
-<!-- Title -->
-<title>
-    Centre Nganda - Radiothérapie et Soins Médicaux à Kinshasa
-</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
