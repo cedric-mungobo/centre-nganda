@@ -593,7 +593,7 @@ const services2 = [
                         >
                             <img
                                 class="sm:mt-10 sm:ml-10 w-full h-full object-cover rounded-custom"
-                                src="/assets/images/IMG_1004.jpg"
+                                src="/assets/images/BRU_9978.jpg"
                                 alt="about Us image"
                             />
                         </div>
