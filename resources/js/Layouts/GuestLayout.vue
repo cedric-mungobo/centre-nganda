@@ -457,10 +457,11 @@ const routes = [
 <style>
 .header {
     /* background-color: red; */
-    background: rgba(255, 255, 255, 0.5);
+    background: white;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(15px);
     /* border: 1px solid rgba(255, 255, 255, 0.45); */
+    padding: 0 10px;
     border-radius: 15px;
 }
 </style>

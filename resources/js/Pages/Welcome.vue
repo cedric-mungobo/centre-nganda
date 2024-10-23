@@ -64,7 +64,7 @@ const services2 = [
         <!-- <HeaderSection /> -->
 
         <!--  home hero -->
-        <section class="w-full h-[100vh] flex bg-secondary">
+        <section class="w-full h-full flex bg-secondary">
             <div class="md:pt-52 pt-24 md:px-10 pl-3 text-white">
                 <h1 class="text-xl" v-animate="'backInDown'">
                     Votre santé, Notre priorité
@@ -90,7 +90,7 @@ const services2 = [
                     </div>
                 </div>
             </div>
-            <div class="w-full h-screen top-0">
+            <div class="w-full h-screen top-0 hidden sm:block">
                 <img
                     src="/assets/images/BRU_9885.jpg"
                     class="curve object-cover object-center"
