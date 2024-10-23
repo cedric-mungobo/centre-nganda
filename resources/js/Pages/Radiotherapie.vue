@@ -74,13 +74,13 @@ const features = [
                 >
                     <div class="mb-10 mt-6 lg:my-40 w-full lg:pr-5">
                         <p
-                            class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"
+                            class="inline-block px-3 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"
                         >
                             Centre de Radiothérapie à Kinshasa
                         </p>
                         <h2
                             v-animate="'zoomIn'"
-                            class="mb-5 font-sans text-3xl md:text-6xl font-bold leading-3 text-gray-900 sm:text-4xl sm:leading-none"
+                            class="mb-5 font-sans text-3xl md:text-6xl font-bold text-gray-900 sm:text-4xl"
                         >
                             Traitement Innovant et Efficace Contre le Cancer
                         </h2>

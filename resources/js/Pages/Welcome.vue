@@ -122,14 +122,16 @@ const services2 = [
                 </div>
             </div>
             <div class="w-full h-screen top-0">
-                <img src="/assets/images/BRU_9885.jpg" class="curve" alt="" />
+                <img
+                    src="/assets/images/BRU_9885.JPG"
+                    class="curve object-cover object-center"
+                    alt=""
+                />
             </div>
         </section>
 
         <!--  nos service -->
-        <section
-            class="ezy__service13 light py-5 md:py-8 bg-white text-zinc-900"
-        >
+        <section class="ezy__service13 light py-5 md:py-8 bg2 text-zinc-900">
             <div class="container px-4 mx-auto">
                 <div class="flex items-center justify-center mb-2 sm:mb-">
                     <div
@@ -223,47 +225,114 @@ const services2 = [
 
         <!--  cancer -->
 
-        <section class="w-full flex h-[100vh] bg-[#ad808c]">
-            <div
-                class="md:pt-52 pt-6 max-w-60 md:max-w-full md:px-10 px-1 pl-3 text-white"
-            >
-                <h1 class="text-xl" v-animate="'backInDown'">
-                    Centre Hospitalier Nganda : l'espoir d'une guérison
-                </h1>
-                <h1
-                    class="text-4xl font-bold lg:text-7xl my-10 uppercase lg:leading-snug"
-                    v-animate="'zoomIn'"
+        <section class="py-24 w-full xl:mr-0 lg:mr-5 mr-0 bg1">
+            <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+                <div
+                    class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1"
                 >
-                    Votre allié dans la lutte contre le cancer
-                </h1>
-                <div class="" v-animate="'backInUp'">
-                    <p class="text-gray-200">
-                        Le Centre Hospitalier Nganda est un établissement
-                        médical privé de Kinshasa, en République Démocratique du
-                        Congo, reconnu pour son expertise dans le diagnostic et
-                        le traitement du cancer. Depuis plus de 30 ans, nous
-                        mettons tout en œuvre pour offrir à nos patients une
-                        prise en charge médicale de qualité, humaine et
-                        personnalisée.
-                    </p>
-                    <div class="py-6">
-                        <button
-                            type="button"
-                            class="m-1 h-12 transform rounded-md bg-primary px-6 py-2 text-secondary hover:bg-slate-200 transition-colors duration-200 focus:outline-none"
+                    <div
+                        v-animate="'backInLeft'"
+                        class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex"
+                    >
+                        <div
+                            class="w-full flex-col justify-center items-start gap-8 flex"
                         >
-                            Contactez-nous
+                            <div
+                                class="flex-col justify-start lg:items-start items-center gap-4 flex"
+                            >
+                                <h6
+                                    class="text-gray-400 text-base font-normal leading-relaxed"
+                                >
+                                    Centre Hospitalier Nganda : l'espoir d'une
+                                    guérison
+                                </h6>
+                                <div
+                                    class="w-full flex-col justify-start lg:items-start items-center gap-3 flex"
+                                >
+                                    <h2
+                                        class="text-indigo-700 text-4xl font-bold font-manrope leading-normal lg:text-start text-center"
+                                    >
+                                        Votre allié dans la lutte contre le
+                                        cancer
+                                    </h2>
+                                    <p
+                                        class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center"
+                                    >
+                                        Le Centre Hospitalier Nganda est un
+                                        établissement médical privé de Kinshasa,
+                                        en République Démocratique du Congo,
+                                        reconnu pour son expertise dans le
+                                        diagnostic et le traitement du cancer.
+                                        Depuis plus de 30 ans, nous mettons tout
+                                        en œuvre pour offrir à nos patients une
+                                        prise en charge médicale de qualité,
+                                        humaine et personnalisée.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-full flex-col justify-center items-start gap-6 flex"
+                            >
+                                <p
+                                    class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center"
+                                >
+                                    Le Centre Hospitalier Nganda est un
+                                    établissement médical privé de Kinshasa, en
+                                    République Démocratique du Congo, reconnu
+                                    pour son expertise dans le diagnostic et le
+                                    traitement du cancer. Depuis plus de 30 ans,
+                                    nous mettons tout en œuvre pour offrir à nos
+                                    patients une prise en charge médicale de
+                                    qualité, humaine et personnalisée.
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="sm:w-fit w-full group px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex"
+                        >
+                            <span
+                                class="px-1.5 text-indigo-600 text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out"
+                                >A propos de nous
+                            </span>
+                            <svg
+                                class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                            >
+                                <path
+                                    d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996"
+                                    stroke="#4F46E5"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
                         </button>
                     </div>
+                    <div
+                        v-animate="'backInRight'"
+                        class="w-full lg:justify-start justify-center items-start flex"
+                    >
+                        <div
+                            class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative"
+                        >
+                            <img
+                                class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
+                                src="/assets/images/IMG_1004.JPG"
+                                alt="about Us image"
+                            />
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full h-screen top-0">
-                <img src="/assets/images/cancer.jpg" class="curve2" alt="" />
             </div>
         </section>
 
         <section class="lg:py-20 py-5 lg:pl-8 h-full">
             <div
-                class="rounded-2xl bg-indigo-50 py-10 overflow-hidden m-5 lg:m-0 2xl:py-16 xl:py-8 lg:rounded-tl-2xl lg:rounded-bl-2xl"
+                class="rounded-2xl bg-indigo-50 py-10 overflow-hidden sm:pl-5 m-5 lg:m-0 2xl:py-16 xl:py-8 lg:rounded-tl-2xl lg:rounded-bl-2xl"
             >
                 <div class="mx-auto max-w-7xl pl-4 sm:px-0 lg:px-0">
                     <div
@@ -360,448 +429,147 @@ const services2 = [
             </div>
         </section>
 
-        <!-- <section>
-            <div
-                class="mx-auto mt-20 px-4 sm:max-w-xl md:max-w-full md:px-10 lg:max-w-screen-xl lg:px-8 lg:h-screen"
-            >
-                <div
-                    class="flex flex-col items-center justify-between lg:flex-row"
-                >
-                    <div class="lg:max-w-lg lg:pr-5">
-                        <div
-                            class="max-w-screen-xl py-16"
-                            v-animate="'backInLeft'"
-                        >
-                            <h2
-                                class="mb-6 max-w-xl text-3xl leading-snug tracking-tight text-blue-600 sm:text-5xl sm:leading-snug"
+        <!--  cta  extended  -->
+
+        <section
+            class="bg3 light py-14 md:py-24 mb-4 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10"
+        >
+            <div class="container px-4 mx-auto">
+                <div class="grid grid-cols-12">
+                    <!--  heading-->
+                    <div class="col-span-12 md:col-span-8">
+                        <div class="mb-12">
+                            <h1
+                                class="text-2xl font-bold leading-tight md:text-[35px] mb-4"
                             >
-                                <span
-                                    class="my-1 inline-block font-serif font-bold text-blue-600"
-                                    >Nous Offrons des Soins
-                                </span>
-                                de Qualité Pour Tous
-                            </h2>
-                            <p class="text-base text-gray-700">
-                                Nous offrons des soins primaires quand vous en
-                                avez besoin. Recevez des soins personnalisés et
-                                de haute qualité en consultant les meilleurs
-                                médecins.
+                                Excellence en Radiothérapie à Kinshasa
+                            </h1>
+                            <p class="text-lg opacity-80 leading-7">
+                                Le Centre Hospitalier Nganda offre des soins de
+                                radiothérapie de pointe, alliant technologie
+                                avancée et suivi personnalisé.
                             </p>
+                        </div>
+                    </div>
+                    <!-- img -->
+                    <div
+                        v-animate="'zoomIn'"
+                        class="col-span-12 lg:col-span-6 text-center lg:order-2"
+                    >
+                        <div
+                            class="bg-center bg-no-repeat bg-cover rounded-xl h-full min-h-[400px] lg:min-h-[550px]"
+                            style="
+                                background-image: url(assets/images/IMG_5912.jpg);
+                            "
+                        ></div>
+                    </div>
+                    <!-- cards -->
+                    <div
+                        v-animate="'zoomIn'"
+                        class="col-span-12 lg:col-span-6 flex flex-col justify-center xl:mr-20"
+                    >
+                        <!-- card starts -->
+                        <div class="flex justify-center p-6">
                             <div
-                                class="mt-8 sm:flex space-y-3 sm:space-y-0 sm:space-x-3"
+                                class="bg-blue-600 text-white min-w-[60px] h-12 rounded-xl text-lg flex justify-center items-center mb-6"
                             >
-                                <div
-                                    class="flex rounded-xl border-2 border-blue-600 bg-white shadow"
-                                >
-                                    <div class="py-4 px-4">
-                                        <div class="flex items-center">
-                                            <h3
-                                                class="relative inline-block text-2xl font-bold leading-none"
-                                            >
-                                                Personnel
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="flex rounded-xl border-2 border-blue-600 bg-white shadow"
-                                >
-                                    <div class="py-4 px-6">
-                                        <div class="flex items-center">
-                                            <h3
-                                                class="relative inline-block text-2xl font-bold leading-none"
-                                            >
-                                                Famille
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-xl border-2 border-blue-600 bg-white shadow flex"
-                                >
-                                    <div class="py-4 px-6">
-                                        <div class="flex items-center">
-                                            <h3
-                                                class="relative inline-block text-2xl font-bold leading-none"
-                                            >
-                                                Entreprise
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
+                                <i class="fa-solid fa-radiation"></i>
                             </div>
-                        </div>
-                    </div>
-                    <div
-                        class="relative text-secondary lg:ml-10 lg:w-1/2 lg:block"
-                        v-animate="'backInRight'"
-                    >
-                        <div
-                            class="border-b-8 border-b-blue-600 max-w-lg mx-auto mb-1"
-                        >
-                            <img
-                                class="w-full h-full object-contain"
-                                src="/assets/images/md.png"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--  home care -->
-
-        <section id="panel-3" class="panel full-screen">
-            <div class="w-full">
-                <div
-                    class="relative isolate overflow-hidden bg-gray-900 w-full h-screen"
-                >
-                    <img
-                        src="/assets/images/BRU_0013.jpg"
-                        alt=""
-                        class="absolute inset-0 -z-10 h-full w-full object-cover opacity-20"
-                    />
-                    <div
-                        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-                        aria-hidden="true"
-                    >
-                        <div
-                            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-                            style="
-                                clip-path: polygon(
-                                    74.1% 44.1%,
-                                    100% 61.6%,
-                                    97.5% 26.9%,
-                                    85.5% 0.1%,
-                                    80.7% 2%,
-                                    72.5% 32.5%,
-                                    60.2% 62.4%,
-                                    52.4% 68.1%,
-                                    47.5% 58.3%,
-                                    45.2% 34.5%,
-                                    27.5% 76.7%,
-                                    0.1% 64.9%,
-                                    17.9% 100%,
-                                    27.6% 76.8%,
-                                    76.1% 97.7%,
-                                    74.1% 44.1%
-                                );
-                            "
-                        ></div>
-                    </div>
-                    <div class="w-full px-6 lg:px-8" v-animate="'slideInRight'">
-                        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                            <div class="text-center">
-                                <h1
-                                    class="text-4xl font-bold tracking-tight text-white sm:text-6xl pt-32 md:pt-40"
-                                >
-                                    Prenez soin de votre santé dans le confort
-                                    de votre foyer
-                                </h1>
-                                <p
-                                    class="mt-6 text-sm text-start text-gray-300"
-                                >
-                                    Nganda Home Care est un service de soins de
-                                    santé à domicile qui offre une prise en
-                                    charge médicale et paramédicale de qualité
-                                    aux patients de tous âges. Notre équipe
-                                    d'infirmiers, d'aides-soignants et de
-                                    professionnels de santé qualifiés est à
-                                    votre disposition pour vous prodiguer les
-                                    soins dont vous avez besoin, dans le confort
-                                    et la sécurité de votre domicile.
+                            <div class="p-4">
+                                <h5 class="text-xl font-bold mb-4">
+                                    Technologie avancée
+                                </h5>
+                                <p class="text-base font-light leading-snug">
+                                    Des équipements modernes pour des
+                                    traitements précis et efficaces.
                                 </p>
-                                <div
-                                    class="mt-10 flex items-center justify-center gap-x-6"
-                                >
-                                    <a
-                                        href="#"
-                                        class="rounded-md bg-primary -500 px-3.5 py-2.5 text-sm font-semibold text-secondary shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                                        >Contactez-nous</a
-                                    >
-                                    <a
-                                        href="#"
-                                        class="text-sm font-semibold leading-6 text-white"
-                                        >Savoir plus
-                                        <span aria-hidden="true">→</span></a
-                                    >
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-                        aria-hidden="true"
-                    >
-                        <div
-                            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-                            style="
-                                clip-path: polygon(
-                                    74.1% 44.1%,
-                                    100% 61.6%,
-                                    97.5% 26.9%,
-                                    85.5% 0.1%,
-                                    80.7% 2%,
-                                    72.5% 32.5%,
-                                    60.2% 62.4%,
-                                    52.4% 68.1%,
-                                    47.5% 58.3%,
-                                    45.2% 34.5%,
-                                    27.5% 76.7%,
-                                    0.1% 64.9%,
-                                    17.9% 100%,
-                                    27.6% 76.8%,
-                                    76.1% 97.7%,
-                                    74.1% 44.1%
-                                );
-                            "
-                        ></div>
+                        <!-- card ends -->
+                        <!-- card starts -->
+                        <div class="flex items-center justify-center p-6">
+                            <div
+                                class="bg-blue-600 text-white min-w-[60px] h-12 rounded-xl text-lg flex justify-center items-center mb-6"
+                            >
+                                <i class="fa-solid fa-user-md"></i>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="text-xl font-bold mb-4">
+                                    Soins personnalisés
+                                </h5>
+                                <p class="text-base font-light leading-snug">
+                                    Un suivi individualisé pour chaque patient,
+                                    adapté à ses besoins spécifiques.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- card ends -->
+                        <!-- card starts -->
+                        <div class="flex justify-center p-6">
+                            <div
+                                class="bg-blue-600 text-white min-w-[60px] h-12 rounded-xl text-lg flex justify-center items-center mb-6"
+                            >
+                                <i class="fa-solid fa-bone"></i>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="text-xl font-bold mb-4">
+                                    Confort et accompagnement
+                                </h5>
+                                <p class="text-base font-light leading-snug">
+                                    Un accompagnement attentif à chaque étape,
+                                    pour un traitement en toute sérénité.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- card ends -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Hero section
-    <section v-animate="'zoomIn'">
-      <div class="">
-        <div class="mx-auto max-w-screen-xl md:px-3 lg:px-0 mb-5 p-2 lg:p-0">
-          <div
-            class="lg:min-h-[520px] md:min-h-[500px] h-full gap-y-10 items-center bg-primary shadow-sm rounded-xl px-5 md:px-16 grid grid-cols-1 lg:grid-cols-2"
-          >
-            <div class="w-full">
-              <div class="mt-10">
-                <p class="mb-4">Votre santé, Notre prioripriorité</p>
-                <h1
-                  class="font-[900] text-3xl text-secondary lg:text-6xl lg:leading-snug"
-                >
-                  Notre expertise médicale à votre service.
-                </h1>
-
-                <div class="mt-8 space-y-5 text-lg text-gray-600 lg:pr-8">
-                  L'équipe du Centre Hospitalier Nganda s'engage à vous offrir
-                  les meilleurs soins de santé à Kinshasa.
-                </div>
-              </div>
-
-              <div class="mt-8 w-full rounded-md bg-transparent lg:max-w-md">
-                <form class="flex flex-col sm:flex-row">
-                  <button
-                    type="button"
-                    class="m-1 h-12 transform rounded-md bg-secondary px-4 py-2 text-white transition-colors duration-200 focus:bg-secondary focus:outline-none hover:bg-secondary"
-                  >
-                    Contactez-nous
-                  </button>
-                </form>
-              </div>
-            </div>
-
+        <section
+            class="ezy__featured28 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden"
+        >
             <div
-              class="h-full w-full items-center justify-center mb-10 lg:mb-0 flex py-10"
-            >
-              <img
-                class="rounded-custom w-full h-full object-cover"
-                src="assets/images/BRU_9885.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-        <!-- <section v-animate="'backInUp'">
-      <div class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-2 py-2 sm:px- sm:py-3 lg:px-0">
-          <div
-            class="relative isolate overflow-hidden bg-secondary px-6 py-12 text-center shadow-2xl rounded-custom sm:px-16"
-          >
-            <h2
-              class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-5xl"
-            >
-              Prendre Rendez-vous en Ligne
-            </h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-200">
-              Pour vous faciliter la vie, le Centre Hospitalier Nganda vous
-              propose de prendre rendez-vous en ligne.
-            </p>
-            <p class="mx-auto mt-2 max-w-xl text-sm leading-8 text-gray-300">
-              Planifiez votre consultation en quelques clics, rapidement et
-              simplement.
-            </p>
-            <div class="mt-5 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >Avec un Spécialiste
-              </a>
-              <a href="#" class="text-sm font-semibold leading-6 text-white"
-                >Avec un généraliste <span aria-hidden="true">→</span></a
-              >
-            </div>
-            <svg
-              viewBox="0 0 1024 1024"
-              class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-              aria-hidden="true"
-            >
-              <circle
-                cx="512"
-                cy="512"
-                r="512"
-                fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
-                fill-opacity="0.7"
-              />
-              <defs>
-                <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-                  <stop stop-color="#7775D6" />
-                  <stop offset="1" stop-color="#E935C1" />
-                </radialGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-        <!--  nos  services  -->
-
-        <section>
-            <div class="relative bg-white py-16 px-3">
+                class="rounded-tl-[40px] rounded-bl-[40px] absolute left-[55%] bottom-0 top-0 w-[50vw] bg-indigo-50 hidden lg:block"
+            ></div>
+            <div class="container px-4 mx-auto relative">
                 <div
-                    class="absolute inset-x-0 top-0 hidden h-1/2 lg:block"
-                    aria-hidden="true"
-                ></div>
-                <div
-                    class="mx-auto max-w-screen-xl rounded-custom bg-secondary lg:bg-transparent lg:px-0"
+                    class="flex flex-col md:flex-row gap-6 md:gap-12 items-center justify-between"
                 >
-                    <div class="lg:grid lg:grid-cols-12">
-                        <div
-                            class="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent py-10 lg:py-36"
+                    <div
+                        v-animate="'backInLeft'"
+                        class="w-full md:w-1/2 xl:pr-12 text-center lg:text-start my-12"
+                    >
+                        <h2 class="text-xl md:text-[25px] font-bold mb-6">
+                            Nganda Home Care Service de Soins à Domicile à
+                            Kinshasa
+                        </h2>
+                        <p
+                            class="text-sm md:text-[16px] leading-normal opacity-80"
                         >
-                            <div
-                                class="absolute inset-x-0 h-1/2 bg-gray-50 hidden"
-                                aria-hidden="true"
-                            ></div>
-                            <div
-                                v-animate="'zoomInRight'"
-                                class="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:p-0"
-                            >
-                                <div
-                                    class="aspect-h-6 aspect-w-10 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-w-1"
-                                >
-                                    <img
-                                        class="rounded-3xl object-cover object-center shadow-2xl"
-                                        src="/assets/images/radio.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="relative bg-secondary lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl"
-                        >
-                            <div
-                                class="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block"
-                                aria-hidden="true"
-                            >
-                                <svg
-                                    class="absolute bottom-full left-full -translate-x-2/3 translate-y-1/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0"
-                                    width="404"
-                                    height="384"
-                                    fill="none"
-                                    viewBox="0 0 404 384"
-                                    aria-hidden="true"
-                                >
-                                    <defs>
-                                        <pattern
-                                            id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                                            x="0"
-                                            y="0"
-                                            width="20"
-                                            height="20"
-                                            patternUnits="userSpaceOnUse"
-                                        >
-                                            <rect
-                                                x="0"
-                                                y="0"
-                                                width="4"
-                                                height="4"
-                                                class="text-indigo-500"
-                                                fill="currentColor"
-                                            />
-                                        </pattern>
-                                    </defs>
-                                    <rect
-                                        width="404"
-                                        height="384"
-                                        fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                                    />
-                                </svg>
-                                <svg
-                                    class="absolute top-full -translate-x-1/3 -translate-y-1/3 transform xl:-translate-y-1/2"
-                                    width="404"
-                                    height="384"
-                                    fill="none"
-                                    viewBox="0 0 404 384"
-                                    aria-hidden="true"
-                                >
-                                    <defs>
-                                        <pattern
-                                            id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                                            x="0"
-                                            y="0"
-                                            width="20"
-                                            height="20"
-                                            patternUnits="userSpaceOnUse"
-                                        >
-                                            <rect
-                                                x="0"
-                                                y="0"
-                                                width="4"
-                                                height="4"
-                                                class="text-indigo-500"
-                                                fill="currentColor"
-                                            />
-                                        </pattern>
-                                    </defs>
-                                    <rect
-                                        width="404"
-                                        height="384"
-                                        fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                                    />
-                                </svg>
-                            </div>
-                            <div
-                                v-animate="'zoomInLeft'"
-                                class="relative mx-auto max-w-md space-y-6 px-6 py-12 sm:max-w-3xl sm:py-16 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0"
-                            >
-                                <h2
-                                    class="text-3xl font-bold tracking-tight text-white"
-                                    id="join-heading"
-                                >
-                                    Excellence en Radiothérapie à Kinshasa
-                                </h2>
-                                <p class="text-lg text-white">
-                                    Découvrez le meilleur centre de
-                                    radiothérapie de Kinshasa au Centre
-                                    Hospitalier Nganda. Avec notre technologie
-                                    de pointe et notre équipe dévouée, nous vous
-                                    offrons des soins exceptionnels pour votre
-                                    bien-être et votre santé. Faites-nous
-                                    confiance pour un traitement efficace et
-                                    personnalisé, où chaque étape est pensée
-                                    pour vous assurer confort et guérison
-                                    optimale.
-                                </p>
-                                <a
-                                    class="block w-full rounded-md border border-transparent bg-primary px-5 py-3 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto"
-                                    href="#"
-                                    >Contactez-nous</a
-                                >
-                            </div>
-                        </div>
+                            nous vous offrons des services de soins à domicile
+                            professionnels et sur mesure à Kinshasa. Notre
+                            équipe qualifiée veille au bien-être de vos proches
+                            en leur fournissant des soins personnalisés, tout en
+                            leur permettant de rester dans le confort et la
+                            sécurité de leur propre maison.
+                        </p>
+                        <!-- <div class="mt-12">
+                            <a
+                                href=""
+                                class="bg-blue-600 hover:bg-opacity-90 text-white border border-blue-600 rounded transition py-4 px-8 font-normal mb-6 sm:mb-0"
+                                >Explore more
+                                <i class="fas fa-arrow-right ml-1"></i
+                            ></a>
+                        </div> -->
+                    </div>
+                    <div v-animate="'backInRight'" class="w-full md:w-1/2">
+                        <img
+                            src="/assets/images/BRU_0013.jpg"
+                            alt=""
+                            class="mx-auto rounded-md shadow-md"
+                        />
                     </div>
                 </div>
             </div>
@@ -975,100 +743,7 @@ const services2 = [
             <!-- End Features -->
         </section>
 
-        <section>
-            <div
-                v-animate="'zoomIn'"
-                class="relative mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-5 lg:py-32 xl:px-10"
-            >
-                <div class="mx-auto max-w-xl lg:max-w-screen-xl">
-                    <div
-                        class="mb-16 text-center lg:mb-0 lg:max-w-lg lg:text-left"
-                    >
-                        <div class="mb-6 max-w-xl">
-                            <div>
-                                <p
-                                    class="bg-teal-accent-400 mb-4 rounded-full bg-blue-200 px-3 py-1 flex justify-center items-center text-sm font-semibold tracking-wider text-blue-900"
-                                >
-                                    Nganda Home Care Service de Soins à Domicile
-                                    à Kinshasa
-                                </p>
-                            </div>
-                            <h2
-                                class="mb-6 max-w-lg font-sans text-3xl font-bold tracking-tight text-slate-700 sm:text-5xl sm:leading-snug"
-                            >
-                                Prenez soin de vos proches dans le confort
-                                <br />
-
-                                <span class="inline-block text-blue-500"
-                                    >de leur foyer</span
-                                >
-                            </h2>
-                            <p class="text-base text-gray-700 md:text-lg">
-                                Vous cherchez un service de soins à domicile
-                                fiable et professionnel à Kinshasa ? Ne cherchez
-                                pas plus loin que NGANDA HOME CARE. Nous offrons
-                                une large gamme de services de soins à domicile
-                                pour répondre aux besoins de vos proches, leur
-                                permettant ainsi de vivre en toute sécurité et
-                                confortablement dans leur propre maison.
-                            </p>
-                        </div>
-                        <div
-                            class="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 lg:justify-start"
-                        >
-                            <a
-                                href="/"
-                                class="inline-flex h-12 w-full items-center justify-center rounded-full bg-secondary px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-secondary focus:ring sm:w-auto"
-                            >
-                                Contactez-vous
-                            </a>
-                            <a
-                                href="/"
-                                class="inline-flex h-12 w-full items-center justify-center rounded-full border-2 border-secondary bg-500 px-4 font-semibold text-secondary shadow-md outline-600 transition-colors duration-200 hover:border-y-secondary- hover:text-secondary sm:w-auto"
-                            >
-                                Appeler Maintenant
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="h-full justify-center overflow-hidden lg:absolute lg:bottom-0 lg:right-0 lg:flex lg:w-1/2 lg:items-end lg:justify-start"
-                    >
-                        <svg
-                            class="h-full w-full"
-                            viewBox="0 0 200 200"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <defs>
-                                <pattern
-                                    id="img1"
-                                    x="0"
-                                    y="0"
-                                    width="1"
-                                    height="1"
-                                >
-                                    <image
-                                        x="0"
-                                        y="0"
-                                        width="100%"
-                                        height="100%"
-                                        preserveAspectRatio="xMaxYMax slice"
-                                        href="/assets/images/BRU_0013.jpg"
-                                    />
-                                </pattern>
-                            </defs>
-
-                            <path
-                                fill="url(#img1)"
-                                d="M40,-62.6C52.2,-54.5,62.5,-43.9,66.9,-31.4C71.3,-18.9,69.6,-4.6,65.9,8.3C62.2,21.1,56.4,32.5,49.2,45.2C42.1,57.9,33.7,72.1,22.2,75.3C10.7,78.5,-3.9,70.7,-14.8,62.1C-25.7,53.5,-32.8,44.1,-44.9,35.8C-57,27.5,-74,20.3,-82.1,7.7C-90.3,-4.8,-89.5,-22.7,-80.8,-34.8C-72,-46.9,-55.2,-53.3,-40.4,-60.2C-25.6,-67,-12.8,-74.3,0.6,-75.2C13.9,-76.1,27.9,-70.6,40,-62.6Z"
-                                transform="translate(100 100)"
-                            />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section v-animate="'zoomIn'">
+        <section class="px-5">
             <!--  blog -->
 
             <!-- Card Blog -->
@@ -1092,7 +767,13 @@ const services2 = [
                 <!-- Grid -->
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Card -->
-                    <a class="group" href="#">
+                    <!-- <a
+                        class="group"
+                        href="#"
+                        v-animate="'zoomIn'"
+                        v-for="(item, index) in 2"
+                        :key="index"
+                    >
                         <div
                             class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden"
                         >
@@ -1133,53 +814,7 @@ const services2 = [
                                 </svg>
                             </p>
                         </div>
-                    </a>
-                    <!-- End Card -->
-
-                    <!-- Card -->
-                    <a class="group" href="#">
-                        <div
-                            class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden"
-                        >
-                            <img
-                                class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-                                src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                                alt="Image Description"
-                            />
-                        </div>
-
-                        <div class="mt-7">
-                            <h3
-                                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white"
-                            >
-                                Onsite
-                            </h3>
-                            <p class="mt-3 text-gray-800 dark:text-neutral-200">
-                                Optimize your in-person experience with
-                                best-in-class capabilities like badge printing
-                                and lead retrieval
-                            </p>
-                            <p
-                                class="mt-5 inline-flex items-center gap-x-1 text-blue-600 decoration-2 group-hover:underline font-medium"
-                            >
-                                Lire la suite
-                                <svg
-                                    class="flex-shrink-0 size-4"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path d="m9 18 6-6-6-6" />
-                                </svg>
-                            </p>
-                        </div>
-                    </a>
+                    </a> -->
                     <!-- End Card -->
 
                     <!-- Card -->
@@ -1238,3 +873,207 @@ const services2 = [
         </section>
     </GuestLayout>
 </template>
+
+<style>
+.bg1 {
+    background-image: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 55%,
+            rgba(64, 64, 64, 0.04) 55%,
+            rgba(64, 64, 64, 0.04) 76%,
+            transparent 76%,
+            transparent 100%
+        ),
+        linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 14%,
+            rgba(64, 64, 64, 0.04) 14%,
+            rgba(64, 64, 64, 0.04) 41%,
+            transparent 41%,
+            transparent 100%
+        ),
+        linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 2%,
+            rgba(64, 64, 64, 0.04) 2%,
+            rgba(64, 64, 64, 0.04) 18%,
+            transparent 18%,
+            transparent 100%
+        ),
+        linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 61%,
+            rgba(64, 64, 64, 0.04) 61%,
+            rgba(64, 64, 64, 0.04) 71%,
+            transparent 71%,
+            transparent 100%
+        ),
+        linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.bg2 {
+    background-image: linear-gradient(
+            158deg,
+            rgba(84, 84, 84, 0.03) 0%,
+            rgba(84, 84, 84, 0.03) 20%,
+            rgba(219, 219, 219, 0.03) 20%,
+            rgba(219, 219, 219, 0.03) 40%,
+            rgba(54, 54, 54, 0.03) 40%,
+            rgba(54, 54, 54, 0.03) 60%,
+            rgba(99, 99, 99, 0.03) 60%,
+            rgba(99, 99, 99, 0.03) 80%,
+            rgba(92, 92, 92, 0.03) 80%,
+            rgba(92, 92, 92, 0.03) 100%
+        ),
+        linear-gradient(
+            45deg,
+            rgba(221, 221, 221, 0.02) 0%,
+            rgba(221, 221, 221, 0.02) 14.286%,
+            rgba(8, 8, 8, 0.02) 14.286%,
+            rgba(8, 8, 8, 0.02) 28.572%,
+            rgba(52, 52, 52, 0.02) 28.572%,
+            rgba(52, 52, 52, 0.02) 42.858%,
+            rgba(234, 234, 234, 0.02) 42.858%,
+            rgba(234, 234, 234, 0.02) 57.144%,
+            rgba(81, 81, 81, 0.02) 57.144%,
+            rgba(81, 81, 81, 0.02) 71.42999999999999%,
+            rgba(239, 239, 239, 0.02) 71.43%,
+            rgba(239, 239, 239, 0.02) 85.71600000000001%,
+            rgba(187, 187, 187, 0.02) 85.716%,
+            rgba(187, 187, 187, 0.02) 100.002%
+        ),
+        linear-gradient(
+            109deg,
+            rgba(33, 33, 33, 0.03) 0%,
+            rgba(33, 33, 33, 0.03) 12.5%,
+            rgba(147, 147, 147, 0.03) 12.5%,
+            rgba(147, 147, 147, 0.03) 25%,
+            rgba(131, 131, 131, 0.03) 25%,
+            rgba(131, 131, 131, 0.03) 37.5%,
+            rgba(151, 151, 151, 0.03) 37.5%,
+            rgba(151, 151, 151, 0.03) 50%,
+            rgba(211, 211, 211, 0.03) 50%,
+            rgba(211, 211, 211, 0.03) 62.5%,
+            rgba(39, 39, 39, 0.03) 62.5%,
+            rgba(39, 39, 39, 0.03) 75%,
+            rgba(55, 55, 55, 0.03) 75%,
+            rgba(55, 55, 55, 0.03) 87.5%,
+            rgba(82, 82, 82, 0.03) 87.5%,
+            rgba(82, 82, 82, 0.03) 100%
+        ),
+        linear-gradient(
+            348deg,
+            rgba(42, 42, 42, 0.02) 0%,
+            rgba(42, 42, 42, 0.02) 20%,
+            rgba(8, 8, 8, 0.02) 20%,
+            rgba(8, 8, 8, 0.02) 40%,
+            rgba(242, 242, 242, 0.02) 40%,
+            rgba(242, 242, 242, 0.02) 60%,
+            rgba(42, 42, 42, 0.02) 60%,
+            rgba(42, 42, 42, 0.02) 80%,
+            rgba(80, 80, 80, 0.02) 80%,
+            rgba(80, 80, 80, 0.02) 100%
+        ),
+        linear-gradient(
+            120deg,
+            rgba(106, 106, 106, 0.03) 0%,
+            rgba(106, 106, 106, 0.03) 14.286%,
+            rgba(67, 67, 67, 0.03) 14.286%,
+            rgba(67, 67, 67, 0.03) 28.572%,
+            rgba(134, 134, 134, 0.03) 28.572%,
+            rgba(134, 134, 134, 0.03) 42.858%,
+            rgba(19, 19, 19, 0.03) 42.858%,
+            rgba(19, 19, 19, 0.03) 57.144%,
+            rgba(101, 101, 101, 0.03) 57.144%,
+            rgba(101, 101, 101, 0.03) 71.42999999999999%,
+            rgba(205, 205, 205, 0.03) 71.43%,
+            rgba(205, 205, 205, 0.03) 85.71600000000001%,
+            rgba(53, 53, 53, 0.03) 85.716%,
+            rgba(53, 53, 53, 0.03) 100.002%
+        ),
+        linear-gradient(
+            45deg,
+            rgba(214, 214, 214, 0.03) 0%,
+            rgba(214, 214, 214, 0.03) 16.667%,
+            rgba(255, 255, 255, 0.03) 16.667%,
+            rgba(255, 255, 255, 0.03) 33.334%,
+            rgba(250, 250, 250, 0.03) 33.334%,
+            rgba(250, 250, 250, 0.03) 50.001000000000005%,
+            rgba(231, 231, 231, 0.03) 50.001%,
+            rgba(231, 231, 231, 0.03) 66.668%,
+            rgba(241, 241, 241, 0.03) 66.668%,
+            rgba(241, 241, 241, 0.03) 83.33500000000001%,
+            rgba(31, 31, 31, 0.03) 83.335%,
+            rgba(31, 31, 31, 0.03) 100.002%
+        ),
+        linear-gradient(
+            59deg,
+            rgba(224, 224, 224, 0.03) 0%,
+            rgba(224, 224, 224, 0.03) 12.5%,
+            rgba(97, 97, 97, 0.03) 12.5%,
+            rgba(97, 97, 97, 0.03) 25%,
+            rgba(143, 143, 143, 0.03) 25%,
+            rgba(143, 143, 143, 0.03) 37.5%,
+            rgba(110, 110, 110, 0.03) 37.5%,
+            rgba(110, 110, 110, 0.03) 50%,
+            rgba(34, 34, 34, 0.03) 50%,
+            rgba(34, 34, 34, 0.03) 62.5%,
+            rgba(155, 155, 155, 0.03) 62.5%,
+            rgba(155, 155, 155, 0.03) 75%,
+            rgba(249, 249, 249, 0.03) 75%,
+            rgba(249, 249, 249, 0.03) 87.5%,
+            rgba(179, 179, 179, 0.03) 87.5%,
+            rgba(179, 179, 179, 0.03) 100%
+        ),
+        linear-gradient(
+            241deg,
+            rgba(58, 58, 58, 0.02) 0%,
+            rgba(58, 58, 58, 0.02) 25%,
+            rgba(124, 124, 124, 0.02) 25%,
+            rgba(124, 124, 124, 0.02) 50%,
+            rgba(254, 254, 254, 0.02) 50%,
+            rgba(254, 254, 254, 0.02) 75%,
+            rgba(52, 52, 52, 0.02) 75%,
+            rgba(52, 52, 52, 0.02) 100%
+        ),
+        linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+.bg3 {
+    background-image: radial-gradient(
+            circle at center center,
+            rgba(217, 217, 217, 0.05) 0%,
+            rgba(217, 217, 217, 0.05) 15%,
+            rgba(197, 197, 197, 0.05) 15%,
+            rgba(197, 197, 197, 0.05) 34%,
+            rgba(178, 178, 178, 0.05) 34%,
+            rgba(178, 178, 178, 0.05) 51%,
+            rgba(237, 237, 237, 0.05) 51%,
+            rgba(237, 237, 237, 0.05) 75%,
+            rgba(138, 138, 138, 0.05) 75%,
+            rgba(138, 138, 138, 0.05) 89%,
+            rgba(158, 158, 158, 0.05) 89%,
+            rgba(158, 158, 158, 0.05) 100%
+        ),
+        radial-gradient(
+            circle at center center,
+            rgb(255, 255, 255) 0%,
+            rgb(255, 255, 255) 6%,
+            rgb(255, 255, 255) 6%,
+            rgb(255, 255, 255) 12%,
+            rgb(255, 255, 255) 12%,
+            rgb(255, 255, 255) 31%,
+            rgb(255, 255, 255) 31%,
+            rgb(255, 255, 255) 92%,
+            rgb(255, 255, 255) 92%,
+            rgb(255, 255, 255) 97%,
+            rgb(255, 255, 255) 97%,
+            rgb(255, 255, 255) 100%
+        );
+    background-size: 42px 42px;
+}
+</style>

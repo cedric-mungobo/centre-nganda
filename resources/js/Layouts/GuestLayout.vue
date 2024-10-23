@@ -39,7 +39,9 @@ const routes = [
                 >
                     <div class="flex justify-between lg:w-0 lg:flex-1 w-full">
                         <Link :href="route('home')">
-                            <span class="sr-only">Your Company</span>
+                            <span class="sr-only"
+                                >Centre Hospitalier Nganda</span
+                            >
                             <ApplicationLogo
                                 class="block h-8 sm:h-10 w-auto fill-current text-gray-800"
                             />
@@ -71,12 +73,12 @@ const routes = [
                         </button>
                     </div>
                     <nav class="hidden space-x-10 lg:flex">
-                        <a
+                        <Link
                             v-for="(item, index) in routes"
                             :href="route(item.href)"
                             :key="index"
                             class="text-base font-medium text-gray-800 hover:text-gray-900"
-                            >{{ item.name }}</a
+                            >{{ item.name }}</Link
                         >
                     </nav>
                     <div
@@ -122,7 +124,7 @@ const routes = [
                             <div class="px-5 pb-6 pt-5">
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <Link :href="route('dashboard')">
+                                        <Link :href="route('home')">
                                             <span class="sr-only"
                                                 >Your Company</span
                                             >
@@ -162,18 +164,18 @@ const routes = [
                                 </div>
                                 <div class="mt-6">
                                     <nav class="grid grid-cols-1 gap-7">
-                                        <a
-                                            v-for="(route, index) in routes"
-                                            :href="route.href"
+                                        <Link
+                                            v-for="(item, index) in routes"
+                                            :href="route(item.href)"
                                             :key="index"
                                             class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
                                         >
                                             <div
                                                 class="ml-4 text-base font-medium text-gray-900"
                                             >
-                                                {{ route.name }}
+                                                {{ item.name }}
                                             </div>
-                                        </a>
+                                        </Link>
                                     </nav>
                                 </div>
                             </div>
@@ -215,9 +217,9 @@ const routes = [
             >
                 <!--Grid-->
                 <div
-                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 py-10 mx-auto"
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 py-10 mx-auto"
                 >
-                    <div class="col-span-full mb-2 lg:col-span-2 lg:mb-0">
+                    <div class="mb-2 lg:mb-0">
                         <Link
                             :href="route('home')"
                             class="flex justify-center lg:justify-start"
