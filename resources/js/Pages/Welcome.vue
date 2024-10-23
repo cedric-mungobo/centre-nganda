@@ -58,37 +58,6 @@ const services2 = [
 </script>
 
 <template>
-    <Head>
-        <!-- Meta Tags -->
-        <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content="Le Centre Nganda est un établissement médical spécialisé dans les soins contre le cancer, la radiothérapie, la pédiatrie, la médecine interne et bien d'autres services à Kinshasa."
-        />
-        <meta
-            name="keywords"
-            content="Centre Nganda, Kinshasa, radiothérapie, oncologie, soins médicaux, traitement du cancer, pédiatrie, chirurgie, médecine interne"
-        />
-        <meta name="author" content="Centre Nganda" />
-
-        <!-- Open Graph Meta Tags -->
-        <meta
-            property="og:title"
-            content="Centre Nganda - Spécialistes en Radiothérapie et Soins Médicaux à Kinshasa"
-        />
-        <meta
-            property="og:description"
-            content="Découvrez les services de santé spécialisés du Centre Nganda, notamment la radiothérapie, oncologie, pédiatrie, chirurgie et plus encore à Kinshasa."
-        />
-        <meta property="og:image" content="URL_DE_L'IMAGE_ACCUEIL.jpg" />
-        <meta property="og:url" content="URL_DE_LA_PAGE_ACCUEIL" />
-        <meta property="og:type" content="website" />
-
-        <!-- Title -->
-        <title>
-            Centre Nganda - Radiothérapie et Soins Médicaux à Kinshasa
-        </title>
-    </Head>
     <GuestLayout>
         <!-- // header section -->
 
