@@ -123,7 +123,7 @@ const services2 = [
             </div>
             <div class="w-full h-screen top-0">
                 <img
-                    src="/assets/images/BRU_9885.JPG"
+                    src="/assets/images/BRU_9885.jpg"
                     class="curve object-cover object-center"
                     alt=""
                 />
@@ -321,7 +321,7 @@ const services2 = [
                         >
                             <img
                                 class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
-                                src="/assets/images/IMG_1004.JPG"
+                                src="/assets/images/IMG_1004.jpg"
                                 alt="about Us image"
                             />
                         </div>
@@ -593,7 +593,7 @@ const services2 = [
                         >
                             <img
                                 class="sm:mt-10 sm:ml-10 w-full h-full object-cover rounded-custom"
-                                src="/assets/images/BRU_9978.jpg"
+                                src="/assets/images/IMG_1004.jpg"
                                 alt="about Us image"
                             />
                         </div>
