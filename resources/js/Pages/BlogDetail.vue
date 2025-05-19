@@ -35,17 +35,17 @@ const hasRelatedPosts = computed(() => {
     <SeoHead :post="post" />
     <GuestLayout>
         <!-- Hero section with post title and metadata -->
-        <section class="relative pt-20 pb-16 bg-primary">
+        <section class="relative pt-24 pb-16 bg-primary">
             <div class="w-full max-w-4xl px-5 lg:px-8 mx-auto">
-                <h1 class="text-white font-semibold text-4xl sm:text-5xl leading-tight mb-8">
+                <h1 class=" font-semibold text-4xl sm:text-5xl leading-tight mb-8">
                     {{ post.title }}
                 </h1>
                 <div class="flex items-center justify-between flex-wrap gap-4">
                     <div class="data">
-                        <p class="font-medium text-xl leading-8 text-white mb-1">
+                        <p class="font-medium text-xl leading-8  mb-1">
                             {{ post.featured ? 'Article à la une' : 'Article' }}
                         </p>
-                        <p class="font-normal text-lg leading-7 text-white">
+                        <p class="font-normal text-lg leading-7 ">
                             {{ post.user.name }} - {{ formatDate(post.published_at) }}
                         </p>
                     </div>
