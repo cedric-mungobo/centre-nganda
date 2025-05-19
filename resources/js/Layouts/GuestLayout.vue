@@ -43,7 +43,7 @@ const routes = [
                 class="ease-in-out transition-all duration-500 fixed top-2 left-3 right-3 md:left-10 md:right-10 z-50 header"
             >
                 <div
-                    class="mx-auto flex max-w-screen-xl items-center justify-between md:py-2 py-3 px-3 sm:px-8 md:justify-start md:space-x-10 lg:px-0"
+                    class="mx-auto flex max-w-screen-xl items-center justify-between md:py-2 py-3 px-3 sm:px-8 lg:px-0"
                 >
                     <div class="flex items-center">
                         <Link :href="route('home')">
@@ -56,11 +56,27 @@ const routes = [
                         </Link>
                     </div>
 
+                    <!-- Navigation desktop -->
+                    <nav class="hidden space-x-10 lg:flex lg:flex-1 lg:justify-center">
+                        <Link
+                            v-for="(item, index) in routes"
+                            :href="item.hash ? route(item.href) + item.hash : route(item.href)"
+                            :key="index"
+                            :class="[
+                                'text-base font-medium transition-all duration-300',
+                                route().current(item.href) || route().current(item.href + '.*')
+                                    ? 'text-blue-dark font-semibold border-b-2 border-blue-dark pb-1'
+                                    : 'text-gray-800 hover:text-blue-dark'
+                            ]"
+                            >{{ item.name }}</Link
+                        >
+                    </nav>
+
                     <div class="flex items-center space-x-3 sm:space-x-4">
                         <!-- Bouton Contactez-nous (visible sur tous les écrans) -->
                         <Link
                             :href="route().current('home') ? '#contact' : route('home') + '#contact'"
-                            class="inline-flex items-center justify-center whitespace-nowrap rounded-custom bg-blue-dark px-4 sm:px-5 py-2 sm:py-2 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-blue-medium transition-colors"
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-custom bg-blue-dark px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium text-white shadow-md hover:shadow-lg hover:bg-blue-medium transition-all duration-300 transform hover:scale-105"
                             >Contactez-nous</Link
                         >
 
@@ -91,20 +107,6 @@ const routes = [
                             </button>
                         </div>
                     </div>
-                    <nav class="hidden space-x-10 lg:flex">
-                        <Link
-                            v-for="(item, index) in routes"
-                            :href="item.hash ? route(item.href) + item.hash : route(item.href)"
-                            :key="index"
-                            :class="[
-                                'text-base font-medium transition-all duration-300',
-                                route().current(item.href) || route().current(item.href + '.*')
-                                    ? 'text-blue-dark font-semibold border-b-2 border-blue-dark pb-1'
-                                    : 'text-gray-800 hover:text-blue-dark'
-                            ]"
-                            >{{ item.name }}</Link
-                        >
-                    </nav>
                 </div>
 
                 <!--

@@ -1,6 +1,7 @@
 <script setup>
 import { animate, stagger, inView, spring, timeline } from 'motion';
 import { onMounted, ref } from 'vue';
+import { Link } from "@inertiajs/vue3";
 
 // Références pour les éléments animés
 const subtitleRef = ref(null);
@@ -131,19 +132,19 @@ onMounted(() => {
 
                     <!-- Mobile-friendly button layout -->
                     <div ref="buttonsRef" class="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 sm:mt-12">
-                        <a
-                            href="/contact"
+                        <Link
+                            :href="route('about')"
                             class="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 text-base bg-primary text-secondary font-bold rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg focus:outline-none opacity-0 inline-flex items-center justify-center"
                         >
-                            Contactez-nous
-                        </a>
+                            À propos de nous
+                        </Link>
 
-                        <a
+                        <Link
                             href="#services"
                             class="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 text-base bg-transparent border-2 border-primary text-primary font-bold rounded-lg transform transition-all duration-300 hover:bg-primary/10 focus:outline-none opacity-0 inline-flex items-center justify-center"
                         >
                             Nos services
-                        </a>
+                        </Link>
                     </div>
 
                     <!-- Mobile scroll indicator -->

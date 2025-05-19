@@ -30,6 +30,10 @@ defineProps({
         type: String,
         required: true,
     },
+    featuredPosts: {
+        type: Array,
+        default: () => [],
+    },
 });
 </script>
 
@@ -44,7 +48,7 @@ defineProps({
         <RadiotherapySection />
         <HomeCareSection />
         <DoctorsSection />
-        <BlogSection />
+        <BlogSection :featuredPosts="featuredPosts" />
         <ContactSection class=" mb-10" />
     </GuestLayout>
 </template>

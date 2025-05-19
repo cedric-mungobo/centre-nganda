@@ -8,11 +8,20 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
+    // Fetch 3 featured posts for the homepage
+    $featuredPosts = \App\Models\Post::with('user')
+        ->published()
+        ->featured()
+        ->latest('published_at')
+        ->limit(3)
+        ->get();
+
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => false, // Désactivation de l'inscription
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
+        'featuredPosts' => $featuredPosts,
     ]);
 })->name('home');
 
