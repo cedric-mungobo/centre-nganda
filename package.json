@@ -18,7 +18,13 @@
         "vue": "^3.4.0"
     },
     "dependencies": {
+        "@primeuix/themes": "^1.0.3",
+        "@primevue/themes": "^4.3.3",
+        "@vueuse/motion": "^3.0.3",
         "gsap": "^3.12.5",
-        "motion": "^10.18.0"
+        "motion": "^10.18.0",
+        "primeicons": "^7.0.0",
+        "primevue": "^4.3.3",
+        "quill": "^2.0.3"
     }
 }

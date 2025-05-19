@@ -1,87 +1,145 @@
 <template>
-    <div>
-        <section
-            class="ezy__about8 light pb-14 md:pb-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white"
-        >
-            <div
-                class="relative bg-blue-600 bg-opacity-60 dark:bg-opacity-90 py-12"
-            >
-                <div class="container px-4">
-                    <div class="grid grid-cols-12 my-12">
-                        <div class="col-span-12">
-                            <h2
-                                class="text-3xl leading-snug md:text-6xl md:leading-snug font-bold text-white text-center"
-                            >
-                                My Story
-                            </h2>
-                        </div>
-                    </div>
+    <SeoHead page="about" />
+    <GuestLayout>
+        <!-- Hero Section -->
+        <section class="py-16 md:py-24 bg-pattern relative overflow-hidden">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 ref="titleRef" class="text-3xl md:text-5xl font-bold text-blue-dark mb-6 relative inline-block">
+                        À propos du Centre Hospitalier Nganda
+                        <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-medium rounded-full"></span>
+                    </h1>
+                    <p ref="subtitleRef" class="text-lg text-gray-600 mt-6 max-w-3xl mx-auto">
+                        Découvrez l'histoire et la mission de notre centre hospitalier, pionnier dans le domaine de la radiothérapie en République Démocratique du Congo.
+                    </p>
                 </div>
             </div>
-            <div class="container px-4 mt-12">
-                <div class="grid grid-cols-12 gap-6">
-                    <div class="col-span-12 lg:col-span-6 mb-6 lg:mb-0">
-                        <div class="relative">
-                            <h1 class="text-2xl md:text-4xl font-bold mb-4">
-                                I'm Jesica
-                            </h1>
-                            <p class="opacity-75 mb-2">
-                                Completely network collaborative web services
-                                via user-centric initiatives. Quickly promote
-                                sticky testing procedures before unique process
-                                improvements. Distinctively engineer innovative
-                                information whereas revolutionary process
-                                improvements. Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Quia enim omnis
-                                saepe dolor voluptatum. Natus soluta maxime
-                                ipsum nam sapiente dignissimos voluptatum totam.
-                                Ratione atque dolorum nostrum a est
-                                voluptatibus. We want you to maintain a healthy
-                                work-life balance and encourage everyone to take
-                                a reasonable amount of time off. With our
-                                remote-first policy, you can set up shop from
-                                anywhere in the world and receive home office
-                                stipend.
-                            </p>
-                            <p class="opacity-75 mb-0">
-                                Web services via user-centric initiatives.
-                                Quickly promote sticky testing procedures before
-                                unique process improvements. Distinctively
-                                engineer innovative information whereas
-                                revolutionary process improvements. Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.
-                                Quia enim omnis saepe dolor voluptatum. Natus
-                                soluta maxime ipsum nam sapiente dignissimos
-                                voluptatum totam. Quickly promote sticky testing
-                                procedures before unique process improvements.
-                                If you’ve wrapped up your work for the week, go
-                                ahead and start your weekend at 1:00pm on
-                                Fridays. You’re welcome. Ceros matches 25 cents
-                                for every pre-tax dollar contributed to your
-                                401k, capped at $2,000 per year.
-                            </p>
-                        </div>
-                    </div>
+          Dropdown
+          
 
-                    <div
-                        class="col-span-12 lg:col-span-6 flex justify-center items-center"
-                    >
-                        <div
-                            class="border-[15px] border-transparent outline outline-[3px] outline-blue-600 rounded-full w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] overflow-hidden"
-                        >
-                            <img
-                                src="https://cdn.easyfrontend.com/pictures/hero/hero-6.png"
-                                alt=""
-                                class="max-w-full h-auto object-cover"
-                            />
-                        </div>
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-blue-light/10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-blue-medium/5 rounded-full -ml-40 -mb-40"></div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="py-16 md:py-24 bg-white relative">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Histoire Content -->
+                    <div ref="historyRef" class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
+                        <h2 class="text-2xl md:text-3xl font-bold text-blue-dark mb-6 relative inline-block">
+                            Notre histoire
+                            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-blue-medium rounded-full"></span>
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            En 1991, le Dr Sulu Maseb A' Mwang, après ses études en Belgique, entreprît d'ouvrir un centre médical privé dans son pays la République Démocratique du Congo (nommé Zaïre, à l'époque). En effet, suite aux multiples sollicitations de ses voisins qui venaient à son domicile pour des besoins de santé, le Dr Sulu décida, avec l'appui de son épouse Mukay, d'ouvrir un cabinet médical pour leur offrir les meilleures conditions d'accueil.
+                        </p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            N'ayant pas assez de ressources, c'est la maison familiale qui fût transformée en dispensaire. Ainsi, progressivement, le dispensaire se transforma en clinique pour devenir en 2004 : "le Centre Hospitalier Nganda" avec une capacité d'accueil de 100 lits.
+                        </p>
+                        <h3 class="text-xl font-bold text-blue-dark mb-3 mt-6">
+                            Prônant l'innovation
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Le Centre Hospitalier Nganda est le premier centre médical privé à introduire le scanner en RDC et aujourd'hui, il est encore le premier et unique centre à offrir la radiothérapie dans son panel de soins en RDC.
+                        </p>
+                        <h3 class="text-xl font-bold text-blue-dark mb-3 mt-6">
+                            Centre de radiothérapie MUK & MASEB
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Inauguré le 8/03/2020 sous la Haute Autorité de S.E.M Félix-Antoine Tshisekedi Tshilombo, Président de la République Démocratique du Congo, le centre de radiothérapie MUK & MASEB (baptisé ainsi en l'honneur de l'abnégation du couple Sulu) est l'un des points culminants de la lutte contre le cancer en RDC.
+                        </p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Le Centre Hospitalier Nganda est actuellement dirigé par le fils cadet du couple, le Dr Sulu Arnold cela depuis 2017, médecin patricien et spécialiste en management des institutions de santé. Avec lui et au fils des années, ce sont plusieurs agents qui ont rejoint cette aventure pour ne former aujourd'hui qu'une seule et grande famille: « la famille Nganda ».
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+    </GuestLayout>
 </template>
 
-<script lang="ts" setup></script>
+<script setup>
+import GuestLayout from "@/Layouts/GuestLayout.vue";
+import SeoHead from "@/Components/SeoHead.vue";
+import { ref, onMounted } from "vue";
+import { animate, inView, stagger } from "motion";
+import Dropdown from '@/Components/Dropdown.vue';
 
-<style></style>
+// References for animation elements
+const titleRef = ref(null);
+const subtitleRef = ref(null);
+const historyRef = ref(null);
+
+// Configuration des animations
+onMounted(() => {
+    // Animation du titre
+    inView(titleRef.value, () => {
+        animate(titleRef.value,
+            { opacity: [0, 1], y: [-30, 0] },
+            { duration: 0.8, easing: 'ease-out' }
+        );
+    });
+
+    // Animation du sous-titre
+    if (subtitleRef.value) {
+        inView(subtitleRef.value, () => {
+            animate(subtitleRef.value,
+                { opacity: [0, 1], y: [20, 0] },
+                { duration: 0.7, delay: 0.3, easing: 'ease-out' }
+            );
+        });
+    }
+
+    // Animation de l'historique
+    inView(historyRef.value, () => {
+        const headings = historyRef.value.querySelectorAll('h2, h3');
+        const paragraphs = historyRef.value.querySelectorAll('p');
+
+        animate(headings,
+            { opacity: [0, 1], x: [-20, 0] },
+            { duration: 0.6, delay: stagger(0.2) }
+        );
+
+        animate(paragraphs,
+            { opacity: [0, 1], y: [15, 0] },
+            { duration: 0.5, delay: stagger(0.1, { start: 0.4 }) }
+        );
+    });
+});
+</script>
+
+<style scoped>
+/* Background patterns */
+.bg-pattern {
+    background-color: rgba(131, 132, 196, 0.05);
+    background-image:
+        radial-gradient(rgba(28, 51, 140, 0.1) 2px, transparent 2px),
+        radial-gradient(rgba(104, 136, 172, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px, 15px 15px;
+    background-position: 0 0, 15px 15px;
+}
+
+/* Animation for title underline */
+h2, h3 {
+    position: relative;
+}
+
+h2 span {
+    transition: width 0.3s ease;
+}
+
+h2:hover span {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bg-pattern {
+        background-image:
+            radial-gradient(rgba(28, 51, 140, 0.15) 1.5px, transparent 1.5px);
+        background-size: 20px 20px;
+    }
+}
+</style>

@@ -20,11 +20,24 @@ export default {
             colors: {
                 primary: "#E2E8F0",
                 secondary: "#001220",
-                // secondary: "#5D7B9D",
                 light: "#D9D9D9",
+                blue: {
+                    dark: "#1c338c",
+                    medium: "#6888ac",
+                    light: "#8384c4",
+                },
+                green: {
+                    stratege: "#0D9F6F", // Couleur verte principale de Stratège Média
+                    light: "#C1F0DB",    // Couleur de fond vert clair
+                    medium: "#3CB489",    // Vert moyen pour les accents
+                    dark: "#0A7853",      // Vert foncé pour le texte important
+                }
             },
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             },
         },
     },

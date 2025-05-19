@@ -1,0 +1,49 @@
+/* PrimeVue Theme */
+/* Le thème Aura est maintenant importé directement dans app.js */
+@import 'primeicons/primeicons.css';
+
+/* Quill Editor Styles */
+@import '../../../node_modules/quill/dist/quill.core.css';
+@import '../../../node_modules/quill/dist/quill.snow.css';
+
+/* Styles supplémentaires pour l'éditeur Quill */
+.p-editor-container {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.p-editor-toolbar {
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.p-editor-content {
+    font-family: inherit;
+}
+
+/* Correction pour les boutons de la barre d'outils */
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+    content: 'Normal';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+    content: 'Heading 1';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+    content: 'Heading 2';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+    content: 'Heading 3';
+}
+
+/* Correction pour les icônes */
+.ql-snow .ql-toolbar button svg {
+    display: inline-block !important;
+}
