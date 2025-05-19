@@ -31,8 +31,9 @@ const routes = [
         name: "Demande de stage",
         href: "internship",
     },
-
 ];
+
+
 </script>
 
 <template>
@@ -42,61 +43,68 @@ const routes = [
                 class="ease-in-out transition-all duration-500 fixed top-2 left-3 right-3 md:left-10 md:right-10 z-50 header"
             >
                 <div
-                    class="mx-auto flex max-w-screen-xl items-center justify-between md:py-2 py-2 px-8 md:justify-start md:space-x-10 lg:px-0"
+                    class="mx-auto flex max-w-screen-xl items-center justify-between md:py-2 py-3 px-3 sm:px-8 md:justify-start md:space-x-10 lg:px-0"
                 >
-                    <div class="flex justify-between lg:w-0 lg:flex-1 w-full">
+                    <div class="flex items-center">
                         <Link :href="route('home')">
                             <span class="sr-only"
                                 >Centre Hospitalier Nganda</span
                             >
                             <ApplicationLogo
-                                class="block h-8 sm:h-10 w-auto fill-current text-gray-800"
+                                class="block h-7 sm:h-10 w-auto fill-current text-gray-800"
                             />
                         </Link>
                     </div>
-                    <div class="-my-2 -mr-2 flex lg:hidden">
-                        <button
-                            @click="isMenuOpen = !isMenuOpen"
-                            data-collapse-toggle="navbar-default"
-                            type="button"
-                            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                            aria-controls="navbar-default"
-                            aria-expanded="false"
+
+                    <div class="flex items-center space-x-3 sm:space-x-4">
+                        <!-- Bouton Contactez-nous (visible sur tous les écrans) -->
+                        <Link
+                            :href="route().current('home') ? '#contact' : route('home') + '#contact'"
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-custom bg-blue-dark px-4 sm:px-5 py-2 sm:py-2 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-blue-medium transition-colors"
+                            >Contactez-nous</Link
                         >
-                            <span class="sr-only">Open main menu</span>
-                            <svg
-                                class="w-6 h-6"
-                                aria-hidden="true"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
+
+                        <!-- Bouton menu mobile -->
+                        <div class="flex lg:hidden">
+                            <button
+                                @click="isMenuOpen = !isMenuOpen"
+                                data-collapse-toggle="navbar-default"
+                                type="button"
+                                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                aria-controls="navbar-default"
+                                aria-expanded="false"
                             >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                        </button>
+                                <span class="sr-only">Open main menu</span>
+                                <svg
+                                    class="w-6 h-6"
+                                    aria-hidden="true"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <nav class="hidden space-x-10 lg:flex">
                         <Link
                             v-for="(item, index) in routes"
                             :href="item.hash ? route(item.href) + item.hash : route(item.href)"
                             :key="index"
-                            class="text-base font-medium text-gray-800 hover:text-blue-dark"
+                            :class="[
+                                'text-base font-medium transition-all duration-300',
+                                route().current(item.href) || route().current(item.href + '.*')
+                                    ? 'text-blue-dark font-semibold border-b-2 border-blue-dark pb-1'
+                                    : 'text-gray-800 hover:text-blue-dark'
+                            ]"
                             >{{ item.name }}</Link
                         >
                     </nav>
-                    <div
-                        class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0"
-                    >
-                        <a
-                            href="#contact"
-                            class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-custom bg-blue-dark px-6 py-1.5 text-base font-medium text-white shadow-sm hover:bg-blue-medium transition-colors"
-                            >Contactez-nous</a
-                        >
-                    </div>
                 </div>
 
                 <!--
@@ -175,10 +183,20 @@ const routes = [
                                             v-for="(item, index) in routes"
                                             :href="item.hash ? route(item.href) + item.hash : route(item.href)"
                                             :key="index"
-                                            class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
+                                            :class="[
+                                                '-m-3 flex items-center rounded-lg p-3 transition-all duration-300',
+                                                route().current(item.href) || route().current(item.href + '.*')
+                                                    ? 'bg-blue-dark/10'
+                                                    : 'hover:bg-gray-50'
+                                            ]"
                                         >
                                             <div
-                                                class="ml-4 text-base font-medium text-gray-900"
+                                                :class="[
+                                                    'ml-4 text-base font-medium',
+                                                    route().current(item.href) || route().current(item.href + '.*')
+                                                        ? 'text-blue-dark'
+                                                        : 'text-gray-900'
+                                                ]"
                                             >
                                                 {{ item.name }}
                                             </div>
@@ -186,15 +204,7 @@ const routes = [
                                     </nav>
                                 </div>
                             </div>
-                            <div class="px-5 py-6">
-                                <div class="mt-6">
-                                    <a
-                                        href="#contact"
-                                        class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-dark px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-medium transition-colors"
-                                        >Contactez-nous</a
-                                    >
-                                </div>
-                            </div>
+                            <!-- Suppression du bouton Contactez-nous du menu mobile car il est déjà dans l'en-tête -->
                         </div>
                     </div>
                 </transition>
@@ -207,7 +217,7 @@ const routes = [
         <FooterNav />
 
         <!-- Floating Call Button -->
-        <a href="tel:+243897000133" class="fixed bottom-6 right-6 bg-blue-dark hover:bg-blue-medium text-white rounded-full p-4 shadow-lg transition-all duration-300 z-50 flex items-center justify-center group hover:pr-6 animate-pulse hover:animate-none">
+        <a href="tel:+243897000133" class="fixed bottom-6 right-6 bg-blue-dark border border-gray-50 hover:bg-blue-medium text-white rounded-full p-4 shadow-lg transition-all duration-300 z-50 flex items-center justify-center group hover:pr-6 animate-pulse hover:animate-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>

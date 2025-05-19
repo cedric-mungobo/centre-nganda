@@ -1,11 +1,16 @@
+<script setup>
+import { Link } from '@inertiajs/vue3';
+import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+</script>
+
 <template>
-      <footer class="w-full px-3 lg:px-0">
+      <footer class="w-full px-2 lg:px-0 overflow-hidden">
             <div
-                class="mx-auto max-w-screen-2xl bg-zinc-100 px-3 mb-5 rounded-custom shadow-md"
+                class="mx-auto max-w-screen-2xl bg-zinc-100 px-2 sm:px-3 mb-5 rounded-custom shadow-md"
             >
                 <!--Grid-->
                 <div
-                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 py-10 mx-auto"
+                    class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-8 py-10 mx-auto"
                 >
                     <div class="mb-2 lg:mb-0">
                         <Link
@@ -37,36 +42,48 @@
                             <li class="mb-4 hover:translate-x-1 transition-transform">
                                 <Link
                                     :href="route('about')"
-                                    class="text-gray-600 hover:text-blue-dark flex items-center"
+                                    :class="[
+                                        'flex items-center transition-all duration-300',
+                                        route().current('about') ? 'text-blue-dark font-medium' : 'text-gray-600 hover:text-blue-dark'
+                                    ]"
                                     ><span class="mr-2">→</span>À propos</Link
                                 >
                             </li>
                             <li class="mb-4 hover:translate-x-1 transition-transform">
                                 <Link
                                     :href="route('radiotherapie')"
-                                    class="text-gray-600 hover:text-blue-dark flex items-center"
+                                    :class="[
+                                        'flex items-center transition-all duration-300',
+                                        route().current('radiotherapie') ? 'text-blue-dark font-medium' : 'text-gray-600 hover:text-blue-dark'
+                                    ]"
                                     ><span class="mr-2">→</span>Radiothérapie</Link
                                 >
                             </li>
                             <li class="mb-4 hover:translate-x-1 transition-transform">
                                 <Link
-                                    :href="route('home')"
-                                    class="text-gray-600 hover:text-blue-dark flex items-center"
+                                    :href="route('blog')"
+                                    :class="[
+                                        'flex items-center transition-all duration-300',
+                                        route().current('blog') || route().current('blog.*') ? 'text-blue-dark font-medium' : 'text-gray-600 hover:text-blue-dark'
+                                    ]"
                                     ><span class="mr-2">→</span>Blog</Link
                                 >
                             </li>
                             <li class="mb-4 hover:translate-x-1 transition-transform">
                                 <Link
                                     :href="route('internship')"
-                                    class="text-gray-600 hover:text-blue-dark flex items-center"
+                                    :class="[
+                                        'flex items-center transition-all duration-300',
+                                        route().current('internship') ? 'text-blue-dark font-medium' : 'text-gray-600 hover:text-blue-dark'
+                                    ]"
                                     ><span class="mr-2">→</span>Demande de stage</Link
                                 >
                             </li>
                             <li class="mb-4 hover:translate-x-1 transition-transform">
-                                <a
-                                    href="#contact"
+                                <Link
+                                    :href="route().current('home') ? '#contact' : route('home') + '#contact'"
                                     class="text-gray-600 hover:text-blue-dark flex items-center"
-                                    ><span class="mr-2">→</span>Demande de résultat</a
+                                    ><span class="mr-2">→</span>Demande de résultat</Link
                                 >
                             </li>
                         </ul>
@@ -93,10 +110,10 @@
                                 </span>
                             </li>
                             <li class="mb-4 hover:translate-x-1 transition-transform">
-                                <a
-                                    href="#contact"
+                                <Link
+                                    :href="route().current('home') ? '#contact' : route('home') + '#contact'"
                                     class="text-gray-600 hover:text-blue-dark flex items-center"
-                                    ><span class="mr-2">→</span>Nous contacter</a
+                                    ><span class="mr-2">→</span>Nous contacter</Link
                                 >
                             </li>
                         </ul>
@@ -124,16 +141,17 @@
                             <li class="mb-4 hover:translate-x-1 transition-transform">
                                 <a
                                     href="mailto:reception@centrehospitaliernganda.com"
-                                    class="text-gray-600 hover:text-blue-dark flex items-center"
-                                    ><span class="mr-2">→</span>reception@centrehospitaliernganda.com</a
+                                    class="text-gray-600 hover:text-blue-dark flex items-start"
+                                    ><span class="mr-2 mt-1">→</span>
+                                    <span class="break-all">reception@centrehospitaliernganda.com</span></a
                                 >
                             </li>
                             <li class="mb-4 hover:translate-x-1 transition-transform">
-                                <a
-                                    href="#contact"
-                                    class="text-gray-600 hover:text-blue-dark flex items-center"
-                                    ><span class="mr-2">→</span>N°3816 , av haute Tension/Nganda C/Kintambo
-                                    Kinshasa</a
+                                <Link
+                                    :href="route().current('home') ? '#contact' : route('home') + '#contact'"
+                                    class="text-gray-600 hover:text-blue-dark flex items-start"
+                                    ><span class="mr-2 mt-1">→</span>
+                                    <span class="break-words">N°3816, av haute Tension/Nganda C/Kintambo Kinshasa</span></Link
                                 >
                             </li>
                         </ul>
@@ -144,11 +162,11 @@
                     <div
                         class="flex items-center justify-center flex-col lg:justify-between lg:flex-row"
                     >
-                        <span class="text-sm text-gray-500 lg:mb-0 mb-4"
+                        <span class="text-sm text-gray-500 lg:mb-0 mb-4 text-center px-2"
                             >© Centre Hospitalier Nganda {{ new Date().getFullYear() }} - Tous droits réservés</span
                         >
                         <div
-                            class="flex mt-4 space-x-4 sm:justify-center sm:mt-0"
+                            class="flex flex-wrap justify-center mt-4 gap-3 sm:space-x-4 sm:justify-center sm:mt-0"
                         >
                             <a
                                 href="javascript:;"
