@@ -12,12 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('children_day_registrations', function (Blueprint $table) {
-            // Supprimer les colonnes obsolètes
-            $table->dropColumn(['child_name', 'child_age', 'email']);
+            // Check if columns exist before trying to drop them
+            if (Schema::hasColumns('children_day_registrations', ['child_name', 'child_age', 'email'])) {
+                $table->dropColumn(['child_name', 'child_age', 'email']);
+            }
 
-            // Ajouter les nouvelles colonnes
-            $table->integer('children_count')->after('department');
-            $table->text('children_ages')->after('children_count');
+            // We don't need to add children_count and children_ages as they already exist
+            // in the original migration
         });
     }
 
@@ -27,8 +28,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('children_day_registrations', function (Blueprint $table) {
-            // Supprimer les colonnes ajoutées
-            $table->dropColumn(['children_count', 'children_ages']);
+            // We don't need to drop children_count and children_ages as they were not added
+            // in this migration but in the original one
 
             // Recréer les colonnes supprimées
             $table->string('child_name')->after('parent_name');
