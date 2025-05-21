@@ -113,13 +113,15 @@ onMounted(() => {
                 <div ref="subtitleRef" class="flex items-center mb-4 opacity-0">
                     <div class="w-10 h-1 bg-primary mr-3 rounded-full"></div>
                     <h2 class="text-primary text-sm sm:text-base md:text-xl font-medium tracking-wider uppercase">
-                        Votre santé, Notre priorité
+                        Notre expertise médicale à votre service
                     </h2>
                 </div>
 
                 <!-- Main heading with responsive sizing -->
                 <h1 ref="headingRef" class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-8 sm:mb-10 leading-tight opacity-0">
-                    Notre expertise médicale à votre service
+                   
+
+                     Votre santé, Notre priorité
                 </h1>
 
                 <div>

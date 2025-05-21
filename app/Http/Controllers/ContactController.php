@@ -51,9 +51,11 @@ class ContactController extends Controller
             'user_agent' => $request->userAgent(),
         ]);
 
-        // Envoi de l'email
-        Mail::to(config('mail.from.address'))
+        // Envoi de l'email directement à l'adresse de réception
+        Mail::to('sedrickmungobo1@gmail.com')
             ->send(new ContactFormMail($contact));
+        // Mail::to('reception@centrehospitaliernganda.com')
+        //     ->send(new ContactFormMail($contact));
 
         // Redirection avec message de succès
         return back()->with('success', 'Votre message a été envoyé avec succès!');

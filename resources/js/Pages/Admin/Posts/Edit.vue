@@ -34,7 +34,6 @@ const form = useForm({
 });
 
 const preview = ref(props.post.featured_image ? `/storage/${props.post.featured_image}` : null);
-const imageInput = ref(null);
 const fileInput = ref(null);
 
 // Nous n'avons plus besoin d'initialiser le contenu dans onMounted
@@ -74,9 +73,6 @@ const handleImageUpload = (e) => {
 const removeImage = () => {
     form.featured_image = null;
     preview.value = null;
-    if (imageInput.value) {
-        imageInput.value.value = '';
-    }
 };
 
 // Fonction pour initialiser manuellement le contenu de l'éditeur
@@ -136,7 +132,7 @@ const updatePublishedAt = () => {
         </template>
 
 
-      
+
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -257,13 +253,12 @@ const updatePublishedAt = () => {
                                     <button
                                         type="button"
                                         class="ml-5 rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                                        @click="fileInput.value.click()"
+                                        @click="$refs.fileInput.click()"
                                     >
                                         Changer
                                     </button>
                                     <input
                                         ref="fileInput"
-                                        :ref="el => fileInput.value = el"
                                         type="file"
                                         class="hidden"
                                         @change="handleImageUpload"

@@ -28,6 +28,9 @@ class ContactFormMail extends Mailable
     {
         return new Envelope(
             subject: 'Nouveau message de contact - Centre Hospitalier Nganda',
+            replyTo: [
+                new \Illuminate\Mail\Mailables\Address('reception@centrehospitaliernganda.com', 'Centre Hospitalier Nganda'),
+            ],
         );
     }
 

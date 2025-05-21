@@ -29,6 +29,9 @@ class InternshipRequestMail extends Mailable
     {
         return new Envelope(
             subject: 'Nouvelle demande de stage - Centre Hospitalier Nganda',
+            replyTo: [
+                new \Illuminate\Mail\Mailables\Address('reception@centrehospitaliernganda.com', 'Centre Hospitalier Nganda'),
+            ],
         );
     }
 

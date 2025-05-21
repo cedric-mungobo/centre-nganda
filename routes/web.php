@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChildrenDayController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\InternshipController;
 use App\Http\Controllers\ProfileController;
@@ -45,6 +46,10 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::get('/demande-de-stage', [InternshipController::class, 'create'])->name('internship');
 Route::post('/demande-de-stage', [InternshipController::class, 'store'])->name('internship.store');
 
+// Routes pour la journée "Amenez vos enfants au travail"
+Route::get('/journee-enfants', [ChildrenDayController::class, 'create'])->name('children-day');
+Route::post('/journee-enfants', [ChildrenDayController::class, 'store'])->name('children-day.store');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -62,6 +67,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/admin/posts/{post}/edit', [App\Http\Controllers\PostController::class, 'edit'])->name('admin.posts.edit');
     Route::put('/admin/posts/{post}', [App\Http\Controllers\PostController::class, 'update'])->name('admin.posts.update');
     Route::delete('/admin/posts/{post}', [App\Http\Controllers\PostController::class, 'destroy'])->name('admin.posts.destroy');
+
+    // Routes pour la gestion des inscriptions à la journée "Amenez vos enfants au travail"
+    Route::get('/admin/children-day-registrations', [App\Http\Controllers\Admin\ChildrenDayRegistrationsController::class, 'index'])->name('admin.children-day-registrations.index');
+    Route::get('/admin/children-day-registrations/{registration}', [App\Http\Controllers\Admin\ChildrenDayRegistrationsController::class, 'show'])->name('admin.children-day-registrations.show');
+    Route::put('/admin/children-day-registrations/{registration}/update-status', [App\Http\Controllers\Admin\ChildrenDayRegistrationsController::class, 'updateStatus'])->name('admin.children-day-registrations.update-status');
+    Route::delete('/admin/children-day-registrations/{registration}', [App\Http\Controllers\Admin\ChildrenDayRegistrationsController::class, 'destroy'])->name('admin.children-day-registrations.destroy');
 });
 
 

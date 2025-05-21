@@ -35,6 +35,9 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('admin.posts.index')" :active="route().current('admin.posts.*')">
                                     Blog
                                 </NavLink>
+                                <NavLink :href="route('admin.children-day-registrations.index')" :active="route().current('admin.children-day-registrations.*')">
+                                    Journée des enfants
+                                </NavLink>
                             </div>
                         </div>
 
@@ -120,6 +123,9 @@ const showingNavigationDropdown = ref(false);
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('admin.posts.index')" :active="route().current('admin.posts.*')">
                             Blog
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('admin.children-day-registrations.index')" :active="route().current('admin.children-day-registrations.*')">
+                            Journée des enfants
                         </ResponsiveNavLink>
                     </div>
 

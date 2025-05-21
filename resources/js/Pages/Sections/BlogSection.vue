@@ -60,6 +60,8 @@ const hasPosts = computed(() => {
             </div>
             <!-- End Title -->
 
+          
+
             <!-- No posts message -->
             <div v-if="!hasPosts" class="text-center mb-8">
                 <p class="text-lg text-gray-600">Aucun article à la une n'est disponible pour le moment.</p>
@@ -89,33 +91,12 @@ const hasPosts = computed(() => {
                                 rendez-vous en ligne.
                             </h3>
                         </div>
-                        <div
-                            class="pt-0 p-4 md:p-6 absolute inset-0 flex items-end justify-start"
-                        >
-                            <div
-                                class="inline-flex items-center gap-2 text-sm font-medium bg-secondary px-6 py-2 rounded-custom text-white group-hover:text-white/70"
-                            >
-                                Prenez Rendez-vous
-                                <svg
-                                    class="flex-shrink-0 size-4"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path d="m9 18 6-6-6-6" />
-                                </svg>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
 
+            
             <!-- Featured Posts Grid -->
             <div v-else class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Post Card -->
@@ -132,7 +113,7 @@ const hasPosts = computed(() => {
                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                         />
                         <div class="absolute top-2 right-2">
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary text-white">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-500 text-white">
                                 À la une
                             </span>
                         </div>
@@ -160,7 +141,7 @@ const hasPosts = computed(() => {
                         <!-- Read more link -->
                         <Link
                             :href="`/blog/${post.slug}`"
-                            class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-dark mt-auto"
+                            class="inline-flex items-center gap-2 text-sm font-medium hover:text-primary-dark mt-auto"
                         >
                             Lire la suite
                             <svg
@@ -188,7 +169,7 @@ const hasPosts = computed(() => {
             <div class="text-center mt-8">
                 <Link
                     href="/blog"
-                    class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-medium py-2 px-6 rounded-custom transition-colors"
+                    class="inline-flex items-center gap-2 bg-secondary hover:bg-primary-dark text-white font-medium py-2 px-6 rounded-custom transition-colors"
                 >
                     Voir tous les articles
                     <svg

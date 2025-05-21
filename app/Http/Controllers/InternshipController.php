@@ -87,8 +87,8 @@ class InternshipController extends Controller
             'user_agent' => $request->userAgent(),
         ]);
 
-        // Envoi de l'email
-        Mail::to(config('mail.from.address'))
+        // Envoi de l'email à l'adresse de réception
+        Mail::to('sedrickmungobo1@gmail.com')
             ->send(new InternshipRequestMail($internship));
 
         // Redirection avec message de succès
