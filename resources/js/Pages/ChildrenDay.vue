@@ -1,6 +1,12 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useForm, Head, usePage } from '@inertiajs/vue3';
+import { useForm, usePage } from '@inertiajs/vue3';
+import SeoHead from '@/Components/SeoHead.vue';
+
+const seoMeta = {
+  title: 'Journée "Amenez vos enfants au travail"',
+  description: "Participez à la journée 'Amenez vos enfants au travail' à l'hôpital. Découvrez le programme et inscrivez vos enfants pour une expérience inoubliable !"
+};
 import { watch, computed } from 'vue';
 import GuestLayout from "@/Layouts/GuestLayout.vue";
 import { animate, inView } from 'motion';
@@ -160,10 +166,7 @@ const submitForm = () => {
 </script>
 
 <template>
-    <Head>
-  <title>Journée "Amenez vos enfants au travail"</title>
-  <meta name="description" content="Participez à la journée 'Amenez vos enfants au travail' à l'hôpital. Découvrez le programme et inscrivez vos enfants pour une expérience inoubliable !" />
-</Head>
+    <SeoHead page="children-day" :customMeta="seoMeta" />
 
     <GuestLayout>
         <div class="py-20">
