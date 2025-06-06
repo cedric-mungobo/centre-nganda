@@ -169,8 +169,7 @@ onMounted(() => {
                     class="curve-enhanced object-cover object-center w-full h-full opacity-0"
                     alt="Centre Hospitalier Nganda"
                 />
-                <!-- Overlay effect for the image -->
-                <div class="absolute inset-0 bg-primary/10 mask-overlay hidden lg:block"></div>
+            
             </div>
         </div>
 
