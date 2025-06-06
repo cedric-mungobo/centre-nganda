@@ -79,7 +79,7 @@ onMounted(() => {
                                 Nganda Home Care
                                 <span class="absolute bottom-1 left-0 w-full h-2 bg-blue-light/30 -z-10"></span>
                             </span>
-                            <span>Service de Soins à Domicile à Kinshasa</span>
+                            <span>Service de soins à domicile à Kinshasa</span>
                         </h2>
 
                         <p
@@ -89,12 +89,8 @@ onMounted(() => {
                             :visible="{ opacity: 1, y: 0, transition: { delay: 400, duration: 800 } }"
                             class="text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-8"
                         >
-                            nous vous offrons des services de soins à domicile
-                            professionnels et sur mesure à Kinshasa. Notre
-                            équipe qualifiée veille au bien-être de vos proches
-                            en leur fournissant des soins personnalisés, tout en
-                            leur permettant de rester dans le confort et la
-                            sécurité de leur propre maison.
+                        Nous offrons des services de soins à domicile professionnels et sur mesure à Kinshasa. Notre équipe qualifiée veille au bien-être de vos proches en leur fournissant des soins personnalisés, tout en leur permettant de rester dans le confort et la sécurité de leur propre maison.
+
                         </p>
 
                         <!-- Features -->

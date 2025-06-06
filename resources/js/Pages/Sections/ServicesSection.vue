@@ -143,15 +143,15 @@ onMounted(() => {
                     ref="titleRef"
                     class="text-3xl md:text-5xl font-bold mb-6 opacity-0 text-secondary"
                 >
-                    Services médicaux spécialisés
+                Services médicaux spécialisés
                 </h2>
                 <p
                     ref="descriptionRef"
                     class="text-lg md:text-xl opacity-0 text-gray-600 max-w-2xl mx-auto"
                 >
-                    Nous accordons la plus haute importance à fournir
-                    des soins et des services médicaux de haute qualité
-                    à nos patients
+  
+Nous accordons la plus grande importance à la qualité   des soins et des services médicaux offerts à nos patients.
+
                 </p>
             </div>
 

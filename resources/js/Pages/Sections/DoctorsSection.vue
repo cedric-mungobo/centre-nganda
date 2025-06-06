@@ -39,16 +39,11 @@
                             <h2
                                 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200"
                             >
-                                Nous avons les meilleurs Médecins de la
-                                ville de Kinshasa
+                            Nous avons les meilleurs Médecins de la ville de Kinshasa
+
                             </h2>
                             <p class="text-gray-500 dark:text-neutral-500">
-                                Nos médecins sont parmi les meilleurs
-                                disponibles dans la ville. Pour des soins
-                                d'urgence, des consultations avec des
-                                experts, et des services dans un centre
-                                moderne, nous sommes à votre disposition 24
-                                heures sur 24, 7 jours sur 7.
+                                Nos médecins sont parmi les meilleurs disponibles dans la ville. Pour des soins d'urgence, des consultations avec des experts et des services dans un centre moderne, nous sommes à votre disposition 24 heures sur 24, 7 jours sur 7.
                             </p>
                         </div>
                         <!-- End Title -->
@@ -57,7 +52,7 @@
                         <ul class="space-y-2 sm:space-y-4">
                             <li class="flex space-x-3">
                                 <span
-                                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600  "
                                 >
                                     <svg
                                         class="flex-shrink-0 size-3.5"

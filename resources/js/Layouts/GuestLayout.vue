@@ -38,7 +38,7 @@ const routes = [
 
 <template>
     <div class="min-h-screen overflow-y-auto bg-white">
-        <header class="px-10">
+        <header class="px-10 ">
             <div
                 class="ease-in-out transition-all duration-500 fixed top-2 left-3 right-3 md:left-10 md:right-10 z-50 header"
             >
@@ -136,7 +136,7 @@ const routes = [
                         class="absolute inset-x-0 top-0 z-30 origin-top-right transform ease-in-out transition-all duration-500 p-2 lg:hidden"
                     >
                         <div
-                            class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+                            class="divide-y-2 divide-gray-50  border rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
                         >
                             <div class="px-5 pb-6 pt-5">
                                 <div class="flex items-center justify-between">

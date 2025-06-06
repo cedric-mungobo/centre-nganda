@@ -28,7 +28,7 @@ import { Link } from "@inertiajs/vue3";
                                     :visible="{ opacity: 1, y: 0, transition: { delay: 100, duration: 800 } }"
                                     class="text-3xl md:text-5xl font-bold text-blue-dark mb-6 lg:text-start text-center"
                                 >
-                                A propos de nous
+                                À propos de nous
                                 </h2>
                                 <p
                                     v-motion
@@ -36,37 +36,12 @@ import { Link } from "@inertiajs/vue3";
                                     :visible="{ opacity: 1, y: 0, transition: { delay: 300, duration: 800 } }"
                                     class="text-lg md:text-xl text-gray-600 mb-8 lg:text-start text-center"
                                 >
-                                    Le Centre Hospitalier Nganda est un
-                                    établissement médical privé de Kinshasa,
-                                    en République Démocratique du Congo,
-                                    reconnu pour son expertise dans le
-                                    diagnostic et le traitement du cancer.
-                                    Depuis plus de 30 ans, nous mettons tout
-                                    en œuvre pour offrir à nos patients une
-                                    prise en charge médicale de qualité,
-                                    humaine et personnalisée.
+                                Le Centre Hospitalier Nganda est un établissement médical privé situé à Kinshasa, en République Démocratique du Congo, reconnu pour son expertise dans le diagnostic et le traitement du cancer. Depuis près de 33 ans maintenant, nous mettons tout en œuvre pour offrir à nos patients une prise en charge médicale de qualité, humaine et personnalisée.
+
                                 </p>
                             </div>
                         </div>
-                        <div
-                            class="w-full flex-col justify-center items-start gap-6 flex"
-                        >
-                            <p
-                                v-motion
-                                :initial="{ opacity: 0, y: 20 }"
-                                :visible="{ opacity: 1, y: 0, transition: { delay: 500, duration: 800 } }"
-                                class="text-gray-600 mb-4 lg:text-start text-center"
-                            >
-                                Le Centre Hospitalier Nganda est un
-                                établissement médical privé de Kinshasa, en
-                                République Démocratique du Congo, reconnu
-                                pour son expertise dans le diagnostic et le
-                                traitement du cancer. Depuis plus de 30 ans,
-                                nous mettons tout en œuvre pour offrir à nos
-                                patients une prise en charge médicale de
-                                qualité, humaine et personnalisée.
-                            </p>
-                        </div>
+                      
                     </div>
                     <Link
                         v-motion

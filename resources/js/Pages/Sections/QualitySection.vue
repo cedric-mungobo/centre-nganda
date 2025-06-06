@@ -68,8 +68,8 @@ onMounted(() => {
                             :visible="{ opacity: 1, scale: 1, transition: { delay: 200, duration: 800 } }"
                             class="text-3xl md:text-5xl font-bold mb-8 text-start lg:text-left text-secondary"
                         >
-                            Nous Offrons des Soins <br class="hidden sm:block" />
-                            <span class="text-blue-dark">de Qualité Pour Tous</span>
+                        Nous Offrons des Soins de Qualité Pour Tous
+
                         </h2>
                         <p
                             v-motion
@@ -78,10 +78,8 @@ onMounted(() => {
                             :visible="{ opacity: 1, y: 0, transition: { delay: 400, duration: 800 } }"
                             class="text-lg md:text-xl text-gray-600 text-start lg:text-left max-w-2xl mx-auto lg:mx-0 px-2 sm:px-0 mb-2"
                         >
-                            Nous offrons des soins primaires quand vous en
-                            avez besoin. Recevez des soins personnalisés et
-                            de haute qualité en consultant les meilleurs
-                            médecins.
+                        Nous offrons des soins primaires lorsque vous en avez besoin. Vous recevez des soins personnalisés et de haute qualité en consultant les meilleurs médecins.
+
                         </p>
 
                         <div
@@ -96,7 +94,7 @@ onMounted(() => {
                                 class="flex items-center font-semibold justify-center border border-solid border-blue-medium flex-col bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-dark"
                             >
                                 <i class="fas fa-user-md text-blue-dark text-2xl mb-3"></i>
-                                <h3 class="text-lg">Personnels</h3>
+                                <h3 class="text-lg">Personnel</h3>
                             </div>
                             <div
                                 class="flex items-center font-semibold justify-center border border-solid border-blue-medium flex-col bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-dark"

@@ -65,7 +65,7 @@ const services = [
                             :visible="{ opacity: 1, scale: 1, transition: { duration: 800 } }"
                             class="text-3xl md:text-5xl font-bold text-blue-dark mb-6"
                         >
-                            Excellence en Radiothérapie à Kinshasa
+                        Excellence en Radiothérapie à Kinshasa
                         </h2>
                         <p
                             ref="descriptionRef"
@@ -74,9 +74,7 @@ const services = [
                             :visible="{ opacity: 1, y: 0, transition: { duration: 800, delay: 200 } }"
                             class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
                         >
-                            Le Centre Hospitalier Nganda offre des soins de
-                            radiothérapie de pointe, alliant technologie
-                            avancée et suivi personnalisé.
+                        Le Centre Hospitalier Nganda offre des soins de radiothérapie de pointe, alliant technologie avancée et suivi personnalisé.
                         </p>
                     </div>
                 </div>

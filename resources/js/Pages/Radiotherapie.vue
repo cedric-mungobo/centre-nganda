@@ -103,13 +103,12 @@ const toggleFAQ = (index) => {
                         
                         <div class="text-lg text-gray-600 mb-8">
                             <p class="mb-4">
-                                La radiothérapie est une méthode moderne de traitement des tumeurs qui utilise des rayonnements
-                                ionisants pour détruire les cellules cancéreuses. Ce traitement est locorégional, c'est-à-dire qu'il est
-                                limité à une zone spécifique du corps.
+                                La radiothérapie est une méthode moderne de traitement des tumeurs qui utilise des rayonnements ionisants pour détruire les cellules cancéreuses. Ce traitement est locorégional, c'est-à-dire qu'il est limité à une zone spécifique du corps.
+
                             </p>
                             <p>
-                                Notre approche vise à bloquer la capacité des cellules cancéreuses à se
-                                multiplier tout en préservant autant que possible les tissus sains et les organes avoisinants.
+                                Notre approche vise à bloquer la capacité des cellules cancéreuses à se multiplier tout en préservant autant que possible les tissus sains et les organes évitants.
+
                             </p>
                         </div>
                         
@@ -121,17 +120,14 @@ const toggleFAQ = (index) => {
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-dark">
                                     <p>
-                                        Nous sommes fiers d'être l'un des centres de radiothérapie les plus
-                                        performants de Kinshasa. Nos équipements à la pointe de la technologie et nos
-                                        professionnels de santé expérimentés nous permettent de fournir des soins de
-                                        qualité.
+                                        Nous sommes fiers d'être l'un des centres de radiothérapie les plus performants de Kinshasa. Nos équipements à la pointe de la technologie et nos professionnels de santé expérimentés nous permettent de fournir des soins de qualité.
+
                                     </p>
                                 </div>
                                 <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-medium">
                                     <p>
-                                        Plus de la moitié des patients atteints de cancer bénéficient d'un traitement
-                                        par radiothérapie au cours de leur parcours de soin. Nous offrons un cadre
-                                        optimal pour cette thérapie essentielle, avec un suivi personnalisé.
+                                        Plus de la moitié des patients atteints de cancer bénéficient d'un traitement par radiothérapie au cours de leur parcours de soins. Nous offrons un cadre optimal pour cette thérapie essentielle, avec un suivi personnalisé.
+
                                     </p>
                                 </div>
                             </div>
@@ -161,11 +157,10 @@ const toggleFAQ = (index) => {
             <div class="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-blue-dark mb-4">
-                        Nos Services de Radiothérapie
+                        Nos services de Radiothérapie
                     </h2>
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                        Notre équipe d'experts propose une gamme complète de services pour assurer un traitement efficace et personnalisé.
-                    </p>
+                        Notre équipe d'experts propose une gamme complète de services pour assurer un traitement efficace et personnalisé.                    </p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">

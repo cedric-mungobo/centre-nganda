@@ -33,25 +33,24 @@
                             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-blue-medium rounded-full"></span>
                         </h2>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            En 1991, le Dr Sulu Maseb A' Mwang, après ses études en Belgique, entreprît d'ouvrir un centre médical privé dans son pays la République Démocratique du Congo (nommé Zaïre, à l'époque). En effet, suite aux multiples sollicitations de ses voisins qui venaient à son domicile pour des besoins de santé, le Dr Sulu décida, avec l'appui de son épouse Mukay, d'ouvrir un cabinet médical pour leur offrir les meilleures conditions d'accueil.
+                            En 1991, le Dr Sulu Maseb A' Mwang, après ses études en Belgique, entreprît d'ouvrir un centre médical privé dans son pays la République Démocratique du Congo (nommé Zaïre, à l'époque). En effet, suite aux multiples sollicitations de ses voisins qui se sont produites à son domicile pour des besoins de santé, le Dr Sulu a décidé, avec l'appui de son épouse Mukay, d'ouvrir un cabinet médical pour leur offrir les meilleures conditions d'accueil.
+
                         </p>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            N'ayant pas assez de ressources, c'est la maison familiale qui fût transformée en dispensaire. Ainsi, progressivement, le dispensaire se transforma en clinique pour devenir en 2004 : "le Centre Hospitalier Nganda" avec une capacité d'accueil de 100 lits.
+                            N'ayant pas assez de ressources, c'est la maison familiale qui fût transformée en dispensaire. Ainsi, progressivement, le dispensaire se transforme en clinique pour devenir en 2004 : « le Centre Hospitalier Nganda » avec une capacité d'accueil de 100 lits.
                         </p>
                         <h3 class="text-xl font-bold text-blue-dark mb-3 mt-6">
                             Prônant l'innovation
                         </h3>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            Le Centre Hospitalier Nganda est le premier centre médical privé à introduire le scanner en RDC et aujourd'hui, il est encore le premier et unique centre à offrir la radiothérapie dans son panel de soins en RDC.
-                        </p>
+                            Le Centre Hospitalier Nganda est le premier centre médical privé à introduire le scanner en RDC et aujourd'hui, il est encore le premier et unique centre à offrir la radiothérapie dans son panel de soins en RDC.                        </p>
                         <h3 class="text-xl font-bold text-blue-dark mb-3 mt-6">
                             Centre de radiothérapie MUK & MASEB
                         </h3>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            Inauguré le 8/03/2020 sous la Haute Autorité de S.E.M Félix-Antoine Tshisekedi Tshilombo, Président de la République Démocratique du Congo, le centre de radiothérapie MUK & MASEB (baptisé ainsi en l'honneur de l'abnégation du couple Sulu) est l'un des points culminants de la lutte contre le cancer en RDC.
-                        </p>
+                            Inauguré le 8/03/2020 sous la Haute Autorité de S.E.M Félix-Antoine Tshisekedi Tshilombo, Président de la République Démocratique du Congo, le centre de radiothérapie MUK & MASEB (baptisé ainsi en l'honneur de l'abnégation du couple Sulu) est l'un des points culminants de la lutte contre le cancer en RDC.                        </p>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            Le Centre Hospitalier Nganda est actuellement dirigé par le fils cadet du couple, le Dr Sulu Arnold cela depuis 2017, médecin patricien et spécialiste en management des institutions de santé. Avec lui et au fils des années, ce sont plusieurs agents qui ont rejoint cette aventure pour ne former aujourd'hui qu'une seule et grande famille: « la famille Nganda ».
+                            Le Centre Hospitalier Nganda est actuellement dirigé par le fils cadet du couple, le Dr Sulu Arnold cela depuis 2017, médecin et spécialiste en gestion des institutions de santé. Avec lui et au fil  des années, ce sont plusieurs agents qui ont rejoint cette aventure pour ne former aujourd'hui qu'une seule et grande famille : « la famille Nganda ».
                         </p>
                     </div>
                 </div>

@@ -115,21 +115,19 @@ onMounted(() => {
                     <h2 class="text-primary text-sm sm:text-base md:text-xl font-medium tracking-wider uppercase">
                         Notre expertise médicale à votre service
                     </h2>
-                </div>
+                </div>  
 
                 <!-- Main heading with responsive sizing -->
                 <h1 ref="headingRef" class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-8 sm:mb-10 leading-tight opacity-0">
                    
 
-                     Votre santé, Notre priorité
+                    Votre santé, notre priorité
                 </h1>
 
                 <div>
                     <!-- Description text with better mobile sizing -->
                     <p ref="descriptionRef" class="text-base sm:text-lg text-gray-200 mb-8 sm:mb-10 leading-relaxed opacity-0">
-                        L'équipe du Centre Hospitalier Nganda s'engage à vous
-                        offrir les meilleurs soins de santé à Kinshasa avec une approche
-                        personnalisée et des technologies de pointe.
+                        L'équipe du Centre Hospitalier Nganda s'engage à vous offrir les meilleurs soins de santé à Kinshasa, avec une approche personnalisée et des technologies de pointe.
                     </p>
 
                     <!-- Mobile-friendly button layout -->

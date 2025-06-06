@@ -148,8 +148,8 @@ const services = [
                 >
                     <div class="px-4 sm:px-6 py-6 sm:py-8 border-b border-gray-100 text-center">
                         <h1 class="hero-title text-2xl sm:text-3xl md:text-4xl font-bold text-blue-dark mb-2 relative inline-block">
-                            Découvrez Nos Spécialités et Services de Santé
-                        </h1>
+                            Découvrez nos spécialités et services de santé
+                        </h1>   
                         <p class="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto mt-3">
                             Le Centre Hospitalier Nganda offre une gamme complète de services médicaux spécialisés pour répondre à tous vos besoins de santé.
                         </p>
@@ -164,7 +164,7 @@ const services = [
                         :initial="{ opacity: 0, scale: 0.9 }"
                         :visible="{ opacity: 1, scale: 1, transition: { duration: 700 } }"
                         class="section-title text-2xl sm:text-3xl font-bold text-center text-blue-dark mb-6 md:mb-12 relative inline-block mx-auto"
-                    >Nos Services Médicaux Spécialisés</h2>
+                    >Nos services médicaux spécialisés</h2>
                     <div
                         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
                     >
