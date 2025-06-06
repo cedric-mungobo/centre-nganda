@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useForm, usePage } from '@inertiajs/vue3';
+import { useForm, usePage, Head } from '@inertiajs/vue3';
 import SeoHead from '@/Components/SeoHead.vue';
 
 const seoMeta = {
@@ -166,7 +166,11 @@ const submitForm = () => {
 </script>
 
 <template>
-    <SeoHead page="children-day" :customMeta="seoMeta" />
+    <Head>
+      <title>Journée "Amenez vos enfants au travail"</title>
+      <meta head-key="description" name="description" content="Participez à la journée 'Amenez vos enfants au travail' à l'hôpital. Découvrez le programme et inscrivez vos enfants pour une expérience inoubliable !" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    </Head>
 
     <GuestLayout>
         <div class="py-20">
