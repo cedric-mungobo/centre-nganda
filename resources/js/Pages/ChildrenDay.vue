@@ -160,7 +160,10 @@ const submitForm = () => {
 </script>
 
 <template>
-    <Head title="Journée 'Amenez vos enfants au travail'" />
+    <Head>
+  <title>Journée "Amenez vos enfants au travail"</title>
+  <meta name="description" content="Participez à la journée 'Amenez vos enfants au travail' à l'hôpital. Découvrez le programme et inscrivez vos enfants pour une expérience inoubliable !" />
+</Head>
 
     <GuestLayout>
         <div class="py-20">
