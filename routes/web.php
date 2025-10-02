@@ -39,6 +39,10 @@ Route::get('/a-propos', function () {
     return Inertia::render('About');
 })->name('about');
 
+Route::get('/qui-sommes-nous', function () {
+    return Inertia::render('GUDGC');
+})->name('qui-sommes-nous');
+
 // Route pour le formulaire de contact
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 

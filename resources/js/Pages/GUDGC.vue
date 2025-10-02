@@ -1,0 +1,84 @@
+<script setup>
+import GuestLayout from "@/Layouts/GuestLayout.vue";
+import SeoHead from "@/Components/SeoHead.vue";
+import FormGudgc from "@/Components/FormGudgc.vue";
+import HeroSection from "./Sections/GUDGC/HeroSection.vue";
+import WhyScreenSection from "./Sections/GUDGC/WhyScreenSection.vue";
+import WhoParticipateSection from "./Sections/GUDGC/WhoParticipateSection.vue";
+import HowToSection from "./Sections/GUDGC/HowToSection.vue";
+import GuaranteesSection from "./Sections/GUDGC/GuaranteesSection.vue";
+import PartnersSection from "./Sections/GUDGC/PartnersSection.vue";
+import ContactFormSection from "./Sections/GUDGC/ContactFormSection.vue";
+import { ref } from "vue";
+
+// Animation on scroll
+const isVisible = ref(false);
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+</script>
+
+<template>
+    <SeoHead
+        page=" Guichet Unique pour le Dépistage Gratuit des Cancers (GUDGC)"
+    />
+    <GuestLayout>
+        <!-- Hero Section -->
+        <HeroSection />
+
+        <main class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <div class="relative overflow-hidden h-full max-h-[50rem]">
+                <img
+                    alt="Image de la mission du GUDGC"
+                    class="w-full h-auto object-cover object-center"
+                    src="/assets/images/_DSC4298.jpg"
+                />
+                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/60"></div>
+                <div
+                    class="absolute inset-0 flex flex-col justify-end p-2 md:p-12 text-white"
+                >
+                    <h2 class="text-5xl md:text-6xl font-bold mb-4">
+                    Notre mission
+                    </h2>
+                    <p class="text-lg mb-8 max-w-xl">
+                        Réduire la mortalité liée aux cancers du sein, du col,
+                        du foie (dues aux hépatites B/C) et du colorectal en
+                        améliorant le diagnostic précoce de ces pathologies, la
+                        qualité et le suivi des soins.
+                    </p>
+                   
+                </div>
+              
+            </div>
+            <div
+                class="dark:bg-card-dark h-full p-2 md:p-8 rounded-large flex flex-col justify-center"
+            >
+                <FormGudgc />
+            </div>
+        </main>
+
+        <!-- Main Content -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          
+
+            <!-- Pourquoi Se Faire Dépister Section -->
+            <WhyScreenSection />
+
+            <!-- Qui Peut Participer Section -->
+            <WhoParticipateSection />
+
+            <!-- Comment Faire Section -->
+            <HowToSection />
+
+            <!-- Nos Garanties Section -->
+            <GuaranteesSection />
+
+            <!-- Les Partenaires Section -->
+            <PartnersSection />
+
+            <!-- Formulaire de Contact Section -->
+            <ContactFormSection />
+        </div>
+    </GuestLayout>
+</template>

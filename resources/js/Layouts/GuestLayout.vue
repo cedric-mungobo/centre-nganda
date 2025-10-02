@@ -25,6 +25,10 @@ const routes = [
         href: "radiotherapie",
     },
     {
+        name: "Guichet unique dépistage",
+        href: "qui-sommes-nous",
+    },
+    {
         name: "Blog",
         href: "blog",
     },

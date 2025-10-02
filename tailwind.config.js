@@ -21,6 +21,14 @@ export default {
                 primary: "#E2E8F0",
                 secondary: "#001220",
                 light: "#D9D9D9",
+                "background-light": "#F8F7F4",
+                "background-dark": "#121212",
+                "text-light": "#1C1C1C",
+                "text-dark": "#F8F7F4",
+                "card-light": "#FFFFFF",
+                "card-dark": "#1E1E1E",
+                "border-light": "#E5E7EB",
+                "border-dark": "#374151",
                 blue: {
                     dark: "#1c338c",
                     medium: "#6888ac",
@@ -39,6 +47,7 @@ export default {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             },
+          
         },
     },
 
