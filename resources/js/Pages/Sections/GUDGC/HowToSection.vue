@@ -1,72 +1,58 @@
 <template>
     <!-- How to Get Screened Section -->
     <section class="mb-16">
-        <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl shadow-xl p-8 md:p-12">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    Comment Faire pour Réaliser Votre Dépistage ?
+        <div class="border border-border-light dark:border-border-dark rounded-2xl p-8 md:p-12">
+            <div class="text-center mb-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                    COMMENT FAIRE POUR RÉALISER VOTRE DÉPISTAGE ?
                 </h2>
-                <div class="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
+                <div class="w-24 h-1 bg-pink-400 mx-auto rounded-full"></div>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Présentez-vous au GUDGC</h3>
-                            <p class="text-gray-700">Venez sans rendez-vous. Toutefois, pour les groupes d'au moins 10 personnes ou pour ne pas faire de file, prenez rendez-vous par WhatsApp ou par téléphone.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Apportez une pièce d'identité</h3>
-                            <p class="text-gray-700">Si possible, apportez une pièce d'identité pour faciliter le processus.</p>
-                        </div>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-gray-50 rounded-xl p-6 border-l-4 border-pink-400">
+                    <p class="text-gray-700">
+                        Présentez-vous au GUDGC (cfr adresse).
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 border-l-4 border-pink-400">
+                    <p class="text-gray-700">
+                        • Venez sans rendez-vous.<br>
+                        Toutefois, pour les groupes d'au moins 10 personnes ou pour ne pas faire de file, prenez rendez-vous par WhatsApp ou par téléphone (cfr contacts).
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 border-l-4 border-pink-400">
+                    <p class="text-gray-700">
+                        • Apportez, si possible, une pièce d'identité.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 border-l-4 border-pink-400">
+                    <p class="text-gray-700">
+                        • À savoir : Vous n'avez pas besoin d'être à jeun et tous les kits de dépistage vous seront fournis sur place.
+                    </p>
+                </div>
+                
+                <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">NOS GARANTIES :</h3>
+                    <div class="space-y-3">
+                        <p class="text-gray-700">
+                            • <strong>Consentement éclairé</strong> : Rien ne peut se faire sans votre accord.
+                        </p>
+                        <p class="text-gray-700">
+                            • <strong>Confidentialité</strong> : Vos résultats et vos données de santé sont confidentielles et protégés par la loi congolaise (Ord.-loi n° 23/010 du 13 mars 2023).
+                        </p>
                     </div>
                 </div>
                 
-                <div class="space-y-6">
-                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-                        <div class="flex items-center mb-4">
-                            <svg class="w-8 h-8 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <h3 class="text-lg font-semibold text-yellow-800">À Savoir</h3>
-                        </div>
-                        <ul class="space-y-2 text-yellow-700">
-                            <li>• Vous n'avez pas besoin d'être à jeun</li>
-                            <li>• Tous les kits de dépistage vous seront fournis sur place</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-red-50 border border-red-200 rounded-lg p-6">
-                        <div class="flex items-center mb-4">
-                            <svg class="w-8 h-8 text-red-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-                            </svg>
-                            <h3 class="text-lg font-semibold text-red-800">Important</h3>
-                        </div>
-                        <p class="text-red-700">
-                            Les places étant limitées, n'attendez pas la dernière minute. 
-                            <strong>Faites votre dépistage dès aujourd'hui. C'est gratuit !</strong>
-                        </p>
-                    </div>
+                <div class="bg-red-50 rounded-xl p-6 border-l-4 border-red-500">
+                    <p class="text-gray-700">
+                        <strong>N.B:</strong> les places étant limitées, n'attendez pas la dernière minute.<br>
+                        <strong class="text-red-600">Faites votre dépistage dès aujourd'hui. C'est gratuit !</strong><br>
+                        <em class="text-gray-600">Mibatela, pona dépistage, boma cancer</em>
+                    </p>
                 </div>
             </div>
         </div>

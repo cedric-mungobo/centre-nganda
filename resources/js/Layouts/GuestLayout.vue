@@ -26,7 +26,7 @@ const routes = [
     },
     {
         name: "Guichet unique dépistage",
-        href: "qui-sommes-nous",
+        href: "GUDGC",
     },
     {
         name: "Blog",

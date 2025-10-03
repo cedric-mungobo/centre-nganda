@@ -6,7 +6,6 @@ import HeroSection from "./Sections/GUDGC/HeroSection.vue";
 import WhyScreenSection from "./Sections/GUDGC/WhyScreenSection.vue";
 import WhoParticipateSection from "./Sections/GUDGC/WhoParticipateSection.vue";
 import HowToSection from "./Sections/GUDGC/HowToSection.vue";
-import GuaranteesSection from "./Sections/GUDGC/GuaranteesSection.vue";
 import PartnersSection from "./Sections/GUDGC/PartnersSection.vue";
 import ContactFormSection from "./Sections/GUDGC/ContactFormSection.vue";
 import { ref } from "vue";
@@ -62,17 +61,16 @@ const scrollToTop = () => {
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           
 
-            <!-- Pourquoi Se Faire Dépister Section -->
-            <WhyScreenSection />
-
+            
             <!-- Qui Peut Participer Section -->
             <WhoParticipateSection />
+            <!-- Pourquoi Se Faire Dépister Section -->
+            <WhyScreenSection />
 
             <!-- Comment Faire Section -->
             <HowToSection />
 
-            <!-- Nos Garanties Section -->
-            <GuaranteesSection />
+         
 
             <!-- Les Partenaires Section -->
             <PartnersSection />
