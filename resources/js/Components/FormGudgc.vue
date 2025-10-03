@@ -98,11 +98,10 @@ const resetStatus = () => {
 <template>
     <div class="w-full max-w-4xl mx-auto">
         <h3 class="text-3xl font-bold text-text-light dark:text-text-dark mb-4">
-            Formulaire pour prendre rendez-vous de dépistage
+            Formulaire de prise de rendez-vous 
         </h3>
-        <p class="text-reds-500 dark:text-red-400 mb-2 font-semibold">
-            faite votre dépistage et C'est 100% GRATUIT !
-        </p>
+        <p class="text-red-500 dark:text-red-400 mb-2 font-semibold">
+            Faites votre dépistage, il est 100% GRATUIT !        </p>
         
         <!-- Messages de statut -->
         <div v-if="showSuccess" class="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">

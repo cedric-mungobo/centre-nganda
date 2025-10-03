@@ -1,7 +1,7 @@
 <template>
     <!-- Why Get Screened Section -->
     <section class="mb-16">
-        <div class="border border-border-light dark:border-border-dark rounded-2xl p-8 md:p-12">
+        <div class="border border-border-light dark:border-border-dark rounded-2xl p-4 md:p-12">
             <div class="text-center mb-4">
                 <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                     POURQUOI SE FAIRE DÉPISTER ?

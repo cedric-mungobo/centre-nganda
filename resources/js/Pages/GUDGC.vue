@@ -34,13 +34,13 @@ const scrollToTop = () => {
         <HeroSection />
 
         <main class="grid grid-cols-1 lg:grid-cols-2 gap-2">
-            <div class="relative overflow-hidden h-full max-h-[50rem]">
+            <div class="relative overflow-hidden h-full ">
                 <img
                     alt="Image de la mission du GUDGC"
-                    class="w-full h-auto object-cover object-center"
-                    src="/assets/images/_DSC4298.jpg"
+                    class="w-full h-full object-cover aspect-square object-center"
+                    src="/assets/images/cancer.JPEG"
                 />
-                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/60"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/80"></div>
                 <div
                     class="absolute inset-0 flex flex-col justify-end p-2 md:p-12 text-white"
                 >

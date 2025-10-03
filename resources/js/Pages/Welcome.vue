@@ -6,6 +6,7 @@ import HeaderSection from "./Sections/HeaderSection.vue";
 import HeroSection from "./Sections/HeroSection.vue";
 import ServicesSection from "./Sections/ServicesSection.vue";
 import CancerSection from "./Sections/CancerSection.vue";
+import GudgcRedirectSection from "./Sections/GudgcRedirectSection.vue";
 import QualitySection from "./Sections/QualitySection.vue";
 import RadiotherapySection from "./Sections/RadiotherapySection.vue";
 import HomeCareSection from "./Sections/HomeCareSection.vue";
@@ -44,6 +45,7 @@ defineProps({
         <HeroSection />
         <ServicesSection />
         <CancerSection />
+        <GudgcRedirectSection />
         <QualitySection />
         <RadiotherapySection />
         <HomeCareSection />

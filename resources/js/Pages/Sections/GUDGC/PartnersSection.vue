@@ -1,9 +1,9 @@
 <script setup>
 // Array des partenaires - facile à modifier
 const partners = [
-    { name: 'MSPHPS', fullName: 'Ministère de la Santé Publique' },
-    { name: 'CNLC', fullName: 'Centre National de Lutte Contre Le Cancer' },
-    { name: 'CHN', fullName: 'Centre Hospitalier Nganda' },
+    { name: 'MSPHPS', fullName: 'Ministère de la Santé Publique', image: '/assets/images/logos/3.PNG' },
+    { name: 'CNLC', fullName: 'Centre National de Lutte Contre Le Cancer', image: '/assets/images/logos/1.PNG' },
+    { name: 'CHN', fullName: 'Centre Hospitalier Nganda', image: '/assets/images/logos/2.PNG' },
    
 ];
 </script>
@@ -27,10 +27,10 @@ const partners = [
                         <div 
                             v-for="partner in partners" 
                             :key="`first-${partner.name}`"
-                            class="w-32 h-20 bg-gray-100 rounded-lg flex items-center justify-center group relative"
+                            class="w-32 h-20 bg-white border border-border-light dark:border-border-dark rounded-lg flex items-center justify-center group relative"
                             :title="partner.fullName"
                         >
-                            <span class="text-sm font-semibold text-gray-600">{{ partner.name }}</span>
+                        <img :src="partner.image" alt="Partner Logo" class="w-full h-full object-contain">
                         </div>
                     </div>
                     
@@ -39,10 +39,10 @@ const partners = [
                         <div 
                             v-for="partner in partners" 
                             :key="`second-${partner.name}`"
-                            class="w-32 h-20 bg-gray-100 rounded-lg flex items-center justify-center group relative"
+                            class="w-32 h-20 bg-white border border-border-light dark:border-border-dark rounded-lg flex items-center justify-center group relative"
                             :title="partner.fullName"
                         >
-                            <span class="text-sm font-semibold text-gray-600">{{ partner.name }}</span>
+                            <img :src="partner.image" alt="Partner Logo" class="w-full h-full object-contain">
                         </div>
                     </div>
                 </div>
