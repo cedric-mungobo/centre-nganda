@@ -1,20 +1,63 @@
+# Laravel
 /.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
 /vendor
 .env
 .env.backup
 .env.production
+.env.local
+.env.testing
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 auth.json
+
+# Node.js
+/node_modules
 npm-debug.log
 yarn-error.log
+yarn.lock
+package-lock.json
+
+# Build directories (commenté pour inclure les builds)
+# /public/build
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Storage
+/storage/*.key
+/storage/app/*
+!/storage/app/.gitkeep
+/storage/framework/cache/*
+!/storage/framework/cache/.gitkeep
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitkeep
+/storage/framework/testing/*
+!/storage/framework/testing/.gitkeep
+/storage/framework/views/*
+!/storage/framework/views/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# IDE
 /.fleet
 /.idea
 /.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
