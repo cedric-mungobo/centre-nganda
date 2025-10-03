@@ -1,6 +1,6 @@
 <script setup>
 import GuestLayout from "@/Layouts/GuestLayout.vue";
-import SeoHead from "@/Components/SeoHead.vue";
+
 import FormGudgc from "@/Components/FormGudgc.vue";
 import HeroSection from "./Sections/GUDGC/HeroSection.vue";
 import WhyScreenSection from "./Sections/GUDGC/WhyScreenSection.vue";
@@ -9,9 +9,13 @@ import HowToSection from "./Sections/GUDGC/HowToSection.vue";
 import PartnersSection from "./Sections/GUDGC/PartnersSection.vue";
 import ContactFormSection from "./Sections/GUDGC/ContactFormSection.vue";
 import { ref } from "vue";
+import { Head } from '@inertiajs/vue3'
+
 
 // Animation on scroll
 const isVisible = ref(false);
+
+
 
 const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -19,8 +23,11 @@ const scrollToTop = () => {
 </script>
 
 <template>
-    <SeoHead
-        page=" Guichet Unique pour le Dépistage Gratuit des Cancers (GUDGC)"
+    <Head
+        title=" Guichet Unique pour le Dépistage Gratuit des Cancers (GUDGC)"
+        description="Guichet Unique pour le Dépistage Gratuit des Cancers (GUDGC)"
+        keywords="Guichet Unique pour le Dépistage Gratuit des Cancers (GUDGC)"
+     
     />
     <GuestLayout>
         <!-- Hero Section -->
