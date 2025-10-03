@@ -24,10 +24,10 @@ const routes = [
         name: "Radiothérapie",
         href: "radiotherapie",
     },
-    {
-        name: "Guichet unique dépistage",
-        href: "GUDGC",
-    },
+    // {
+    //     name: "Guichet unique dépistage",
+    //     href: "GUDGC",
+    // },
     {
         name: "Blog",
         href: "blog",
