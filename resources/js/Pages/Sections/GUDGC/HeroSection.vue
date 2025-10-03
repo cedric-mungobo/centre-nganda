@@ -5,7 +5,7 @@
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mt-10">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-                    Guichet Unique pour le Dépistage Gratuit  des Cancers
+                    Guichet Unique de  Dépistage Gratuit  des Cancers 
                 </h1>
                 <p class="text-xs md:text-base text-rose-100  font-semibold smax-w-3xl mx-auto animate-fade-in-delay">
                     Le Guichet unique de dépistage gratuit des cancers (GUDGC) est une initiative du Centre National de Lutte contre le Cancer (CNLC), en partenariat avec le Centre Hospitalier Nganda (CHN), sous l'autorité du Ministère de Santé Publique, Hygiène et Prévoyance Sociale (MSPHPS).                </p>
