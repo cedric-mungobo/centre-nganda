@@ -34,7 +34,7 @@ const scrollToTop = () => {
         <HeroSection />
 
         <main class="grid grid-cols-1 lg:grid-cols-2 gap-2">
-            <div class="relative overflow-hidden h-full ">
+            <div class="relative overflow-hidden h-full min-h-[30rem] ">
                 <img
                     alt="Image de la mission du GUDGC"
                     class="w-full h-full object-cover aspect-square object-center"
@@ -58,9 +58,11 @@ const scrollToTop = () => {
               
             </div>
             <div
-                class="dark:bg-card-dark h-full p-2 md:p-8 rounded-large flex flex-col justify-center"
+                class="dark:bg-card-dark h-full p-2  rounded-large flex flex-col justify-center"
             >
-                <FormGudgc />
+               
+            <!-- Qui Peut Participer Section -->
+            <WhoParticipateSection />
             </div>
         </main>
 
@@ -69,8 +71,9 @@ const scrollToTop = () => {
           
 
             
-            <!-- Qui Peut Participer Section -->
-            <WhoParticipateSection />
+
+
+            <FormGudgc class=" mb-4" />
             <!-- Pourquoi Se Faire Dépister Section -->
             <WhyScreenSection />
 

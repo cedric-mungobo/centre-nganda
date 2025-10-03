@@ -4,9 +4,10 @@ import { ref } from 'vue';
 // État du formulaire
 const form = ref({
     nom: '',
+    prenom: '',
     postnom: '',
     sexe: '',
-    age: '',
+    dateNaissance: '',
     adresse: '',
     email: '',
     telephone: '',
@@ -19,15 +20,51 @@ const showSuccess = ref(false);
 const showError = ref(false);
 const status = ref('');
 
+// Fonction pour calculer l'âge à partir de la date de naissance
+const calculerAge = (dateNaissance) => {
+    const aujourdHui = new Date();
+    const naissance = new Date(dateNaissance);
+    let age = aujourdHui.getFullYear() - naissance.getFullYear();
+    const mois = aujourdHui.getMonth() - naissance.getMonth();
+    
+    if (mois < 0 || (mois === 0 && aujourdHui.getDate() < naissance.getDate())) {
+        age--;
+    }
+    
+    return age;
+};
+
 // Fonction de soumission du formulaire
 const submitForm = () => {
     isSubmitting.value = true;
     
     // Validation des champs obligatoires
-    if (!form.value.nom || !form.value.postnom || !form.value.sexe || !form.value.age || !form.value.adresse || !form.value.telephone || !form.value.connaissance) {
+    if (!form.value.nom || !form.value.prenom || !form.value.postnom || !form.value.sexe || !form.value.dateNaissance || !form.value.adresse || !form.value.telephone || !form.value.connaissance) {
         isSubmitting.value = false;
         showError.value = true;
         status.value = 'Veuillez remplir tous les champs obligatoires.';
+        setTimeout(() => {
+            showError.value = false;
+        }, 5000);
+        return;
+    }
+    
+    // Validation de la date de naissance
+    const age = calculerAge(form.value.dateNaissance);
+    if (age < 18) {
+        isSubmitting.value = false;
+        showError.value = true;
+        status.value = 'Vous devez avoir au moins 18 ans pour utiliser ce service.';
+        setTimeout(() => {
+            showError.value = false;
+        }, 5000);
+        return;
+    }
+    
+    if (age > 100) {
+        isSubmitting.value = false;
+        showError.value = true;
+        status.value = 'Veuillez vérifier votre date de naissance.';
         setTimeout(() => {
             showError.value = false;
         }, 5000);
@@ -39,9 +76,11 @@ const submitForm = () => {
 
 👤 *Informations personnelles :*
 • Nom : ${form.value.nom}
+• Prénom : ${form.value.prenom}
 • Postnom : ${form.value.postnom}
 • Sexe : ${form.value.sexe === 'F' ? 'Féminin' : 'Masculin'}
-• Âge : ${form.value.age} ans
+• Date de naissance : ${new Date(form.value.dateNaissance).toLocaleDateString('fr-FR')}
+• Âge : ${age} ans
 • Adresse : ${form.value.adresse}
 • Téléphone : ${form.value.telephone}
 ${form.value.email ? `• Email : ${form.value.email}` : ''}
@@ -68,9 +107,10 @@ Merci pour votre service !`;
     // Réinitialiser le formulaire
     form.value = {
         nom: '',
+        prenom: '',
         postnom: '',
         sexe: '',
-        age: '',
+        dateNaissance: '',
         adresse: '',
         email: '',
         telephone: '',
@@ -96,7 +136,7 @@ const resetStatus = () => {
 </script>
 
 <template>
-    <div class="w-full max-w-4xl mx-auto">
+    <div class="w-full max-w-6xl mx-auto">
         <h3 class="text-3xl font-bold text-text-light dark:text-text-dark mb-4">
             Formulaire de prise de rendez-vous 
         </h3>
@@ -123,7 +163,7 @@ const resetStatus = () => {
         </div>
 
         <form @submit.prevent="submitForm" class="bg-gray-50 rounded-xl p-6 border-l-4 border-pink-400">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                 <div>
                     <label
                         class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
@@ -136,6 +176,22 @@ const resetStatus = () => {
                         id="nom"
                         name="nom"
                         placeholder="Votre nom"
+                        type="text"
+                        required
+                    />
+                </div>
+                <div>
+                    <label
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                        for="prenom"
+                        >Prénom *</label
+                    >
+                    <input
+                        v-model="form.prenom"
+                        class="w-full bg-background-light dark:bg-card-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
+                        id="prenom"
+                        name="prenom"
+                        placeholder="Votre prénom"
                         type="text"
                         required
                     />
@@ -180,18 +236,15 @@ const resetStatus = () => {
                 <div>
                     <label
                         class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                        for="age"
-                        >Âge *</label
+                        for="dateNaissance"
+                        >Date de naissance *</label
                     >
                     <input
-                        v-model="form.age"
+                        v-model="form.dateNaissance"
                         class="w-full bg-background-light dark:bg-card-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
-                        id="age"
-                        name="age"
-                        placeholder="Votre âge"
-                        type="number"
-                        min="18"
-                        max="100"
+                        id="dateNaissance"
+                        name="dateNaissance"
+                        type="date"
                         required
                     />
                 </div>
@@ -214,37 +267,38 @@ const resetStatus = () => {
                 />
             </div>
 
-            <div class="mb-4">
-                <label
-                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                    for="email"
-                    >Email</label
-                >
-                <input
-                    v-model="form.email"
-                    class="w-full bg-background-light dark:bg-card-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
-                    id="email"
-                    name="email"
-                    placeholder="votre@email.com"
-                    type="email"
-                />
-            </div>
-
-            <div class="mb-4">
-                <label
-                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                    for="telephone"
-                    >Numéro de téléphone *</label
-                >
-                <input
-                    v-model="form.telephone"
-                    class="w-full bg-background-light dark:bg-card-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
-                    id="telephone"
-                    name="telephone"
-                    placeholder="+243 XXX XXX XXX"
-                    type="tel"
-                    required
-                />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                        for="email"
+                        >Email</label
+                    >
+                    <input
+                        v-model="form.email"
+                        class="w-full bg-background-light dark:bg-card-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
+                        id="email"
+                        name="email"
+                        placeholder="votre@email.com"
+                        type="email"
+                    />
+                </div>
+                <div>
+                    <label
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                        for="telephone"
+                        >Numéro de téléphone *</label
+                    >
+                    <input
+                        v-model="form.telephone"
+                        class="w-full bg-background-light dark:bg-card-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="+243 XXX XXX XXX"
+                        type="tel"
+                        required
+                    />
+                </div>
             </div>
 
             <div class="mb-6">
@@ -274,7 +328,7 @@ const resetStatus = () => {
 
             <button
                 :disabled="isSubmitting"
-                class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full flex items-center justify-center gap-2 mb-4 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                class="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-full flex items-center justify-center gap-2 mb-4 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 type="submit"
             >
                 <svg v-if="isSubmitting" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
