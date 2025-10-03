@@ -17,7 +17,7 @@
                         </svg>
                         <h3 class="text-xl font-bold text-gray-900">Téléphone</h3>
                     </div>
-                    <p class="text-lg text-gray-700 font-semibold">+243/845555637</p>
+                    <p class="text-lg text-gray-700 font-semibold">+243845555637</p>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 border-l-4 border-pink-400">
